@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<PreferenceCategory
+		android:title="@string/app_password"
+		android:key="app_password_category">
+		<Preference
+			android:key="change_app_password"
+			android:title="@string/change_app_password"
+			android:summary="@string/app_pass_description">
+
+			<intent android:action="android.secure.message.preferences.ChangeAppPasswordDialog" />
+
+		</Preference>
+	</PreferenceCategory>
+	
+	    <PreferenceCategory
+        android:title="@string/security_question"
+        android:key="security_question_category"
+        >
+        <Preference
+            android:key="change_security_question"
+            android:title="@string/change_security_question"
+            android:summary="@string/security_question_description"
+            >
+            <intent android:action="android.secure.message.preferences.ChangeSecurityQuestionDialog" />
+        </Preference>	
+    </PreferenceCategory>
+    
+	<PreferenceCategory
+        android:key="app_mode_category"
+        android:title="@string/app_mode" >
+        <Preference
+            android:key="app_mode"
+            android:summary="@string/select_app_mode"
+            android:title="@string/app_mode" >
+            <intent android:action="android.secure.message.firstrun.AppModeDialog" />
+        </Preference>	
+    </PreferenceCategory>
+    
+
+</PreferenceScreen>

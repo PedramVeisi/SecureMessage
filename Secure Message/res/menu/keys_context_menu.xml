@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<item
+		android:id="@+id/export_public"
+		android:title="@string/export_public_key"></item>
+	<item
+		android:id="@+id/export_private"
+		android:title="@string/export_private_key"></item>
+	<item
+		android:id="@+id/remove_item"
+		android:title="@string/remove"
+		android:icon="@android:drawable/ic_menu_delete"
+		></item>
+
+</menu>

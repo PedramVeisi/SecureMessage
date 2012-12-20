@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:gravity="center_horizontal">
+	<TextView
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:text="@string/curren_pairs"
+		android:id="@+id/current_pairs_text"
+		android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+	<Button
+		android:id="@+id/generate_keys_button"
+		android:layout_height="wrap_content"
+		android:text="@string/generate_key_button"
+		android:layout_alignParentBottom="true"
+		android:layout_width="fill_parent"
+		android:background="@drawable/buttons_layout"
+		android:textColor="#FFFFFF"
+		></Button>
+	<ListView
+		android:id="@id/android:list"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_above="@+id/generate_keys_button"
+		android:layout_below="@+id/current_pairs_text"
+		android:fillViewport="true"
+		></ListView>
+		
+		<!-- Last attr to make listview fill the entire scrollview -->
+
+	<TextView
+		android:id="@+id/android:empty"
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:text="@string/no_pair"
+		android:layout_below="@id/current_pairs_text"
+		android:layout_above="@+id/special_events"
+		android:gravity="center_vertical|center_horizontal"></TextView>
+
+</RelativeLayout>

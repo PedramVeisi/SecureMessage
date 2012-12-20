@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/sms_receiver_autocomplete_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/receiver_field_hint"
+        android:layout_marginTop="6dip"
+        android:textColor="#000000"
+        android:lines="1"
+        >        
+        
+        <requestFocus >
+        </requestFocus>
+        
+       </MultiAutoCompleteTextView>
+
+    <EditText
+        android:id="@+id/plain_text_field"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/linearLayout1"
+        android:layout_below="@id/sms_receiver_autocomplete_textview"
+        android:background="@drawable/text_edit_background"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:hint="Enter your text..."
+        >
+
+    </EditText>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" >
+
+        <Button
+            android:id="@+id/clear_encrypted_text_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/buttons_layout"
+            android:text="@string/clear"
+            android:textColor="#FFFFFF" >
+        </Button>
+
+        <Button
+            android:id="@+id/encrypt_text_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/buttons_layout"
+            android:text="@string/encrypt_text"
+            android:textColor="#FFFFFF" >
+        </Button>
+
+        <Button
+            android:id="@+id/send_sms_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/buttons_layout"
+            android:text="@string/send_sms"
+            android:textColor="#FFFFFF" >
+        </Button>
+    </LinearLayout>
+
+</RelativeLayout>
