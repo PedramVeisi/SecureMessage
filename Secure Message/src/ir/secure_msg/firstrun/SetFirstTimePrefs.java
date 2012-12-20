@@ -65,11 +65,11 @@ public class SetFirstTimePrefs extends PreferenceActivity implements Preferences
 				int appMode = handlePrefs.getAppModeId();
 				
 				if(appPass.equals("")){
-					showWarning("Set App Password!");
+					showWarning(getString(R.string.set_app_password));
 				}else if (secQuestion.equals("")) {
-					showWarning("Set Security Question!");
+					showWarning(getString(R.string.set_security_question));
 				}else if (appMode == 0) {
-					showWarning("Choose App Mode!");
+					showWarning(getString(R.string.set_app_mode));
 				}
 				else{
 					

@@ -91,4 +91,6 @@
 	<string name="password_recovery">Password Recovery</string>
 	<string name="password_successfully_updated">Password Successfully Updated.</string>
 	<string name="decrypt">decrypt</string>
+	<string name="set_app_password">Set App Password!</string>
+	<string name="set_app_mode">Set App Mode!</string>
 </resources>
