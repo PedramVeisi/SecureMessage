@@ -1,0 +1,7 @@
+Secure Message uses GreenDroid for inbox functionality. To run the project in Eclipse:
+
+1. Download and import GreenDroid (https://github.com/cyrilmottier/GreenDroid)
+2. Import Secure Message
+3, Right Click on Secure Message project and select properties.
+4. Go to Android section.  Under library, click Add, select GreenDroid and click OK.
+5. Done. Run the project.
