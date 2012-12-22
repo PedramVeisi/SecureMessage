@@ -9,7 +9,7 @@
 			android:title="@string/change_app_password"
 			android:summary="@string/app_pass_description">
 
-			<intent android:action="android.secure.message.preferences.ChangeAppPasswordDialog" />
+			<intent android:action="ir.secure_msg.preferences.ChangeAppPasswordDialog" />
 
 		</Preference>
 	</PreferenceCategory>
@@ -23,7 +23,7 @@
             android:title="@string/change_security_question"
             android:summary="@string/security_question_description"
             >
-            <intent android:action="android.secure.message.preferences.ChangeSecurityQuestionDialog" />
+            <intent android:action="ir.secure_msg.preferences.ChangeSecurityQuestionDialog" />
         </Preference>	
     </PreferenceCategory>
     
@@ -34,7 +34,7 @@
             android:key="app_mode"
             android:summary="@string/select_app_mode"
             android:title="@string/app_mode" >
-            <intent android:action="android.secure.message.firstrun.AppModeDialog" />
+            <intent android:action="ir.secure_msg.firstrun.AppModeDialog" />
         </Preference>	
     </PreferenceCategory>
     

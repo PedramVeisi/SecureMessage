@@ -37,7 +37,6 @@
 		android:layout_width="fill_parent"
 		android:text="@string/no_pair"
 		android:layout_below="@id/current_pairs_text"
-		android:layout_above="@+id/special_events"
 		android:gravity="center_vertical|center_horizontal"></TextView>
 
 </RelativeLayout>
