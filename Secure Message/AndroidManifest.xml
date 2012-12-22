@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest
     xmlns:android="http://schemas.android.com/apk/res/android"
-    package="android.secure.message"
+    package="ir.secure_msg"
     android:versionCode="1"
     android:versionName="1.0"
     android:installLocation="auto"
@@ -36,7 +36,7 @@
             android:label="@string/password_recovery" >
             
             <intent-filter>
-                <action android:name="android.secure.message.main.ForgetPasswordDialog" />
+                <action android:name="ir.secure_msg.main.ForgetPasswordDialog" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             
@@ -68,7 +68,7 @@
             >
 
             <intent-filter>
-                <action android:name="android.secure.message.preferences.ChangeAppPasswordDialog" />
+                <action android:name="ir.secure_msg.preferences.ChangeAppPasswordDialog" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
 
@@ -81,7 +81,7 @@
             >
 
             <intent-filter>
-                <action android:name="android.secure.message.preferences.ChangeSecurityQuestionDialog" />
+                <action android:name="ir.secure_msg.preferences.ChangeSecurityQuestionDialog" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
 
@@ -114,7 +114,7 @@
             >
          
             <intent-filter>
-                <action android:name="android.secure.message.firstrun.AppModeDialog" />
+                <action android:name="ir.secure_msg.firstrun.AppModeDialog" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             
@@ -127,7 +127,7 @@
             >
             
             <intent-filter>
-                <action android:name="android.secure.message.firstrun.SetAppPasswordDialog" />
+                <action android:name="ir.secure_msg.firstrun.SetAppPasswordDialog" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
 
@@ -142,7 +142,7 @@
             >
             
             <intent-filter>
-                <action android:name="android.secure.message.firstrun.SetSecurityQuestionDialog" />
+                <action android:name="ir.secure_msg.firstrun.SetSecurityQuestionDialog" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
 

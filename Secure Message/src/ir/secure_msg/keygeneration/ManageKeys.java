@@ -48,7 +48,7 @@ import android.content.DialogInterface;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.Environment;
-import android.secure.message.R;
+import ir.secure_msg.R;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.AdapterView;

@@ -42,7 +42,7 @@ import android.graphics.ColorFilter;
 import android.graphics.LightingColorFilter;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.secure.message.R;
+import ir.secure_msg.R;
 import android.util.Log;
 import android.view.View;
 import android.widget.ListView;
@@ -188,7 +188,7 @@ public class ConversationActivity extends GDListActivity {
 		mGrid.addQuickAction(new MyQuickAction(this,
 				R.drawable.gd_action_bar_compose, R.string.gd_compose));
 		mGrid.addQuickAction(new MyQuickAction(this,
-				R.drawable.gd_action_bar_search, android.secure.message.R.string.decrypt));
+				R.drawable.gd_action_bar_search, ir.secure_msg.R.string.decrypt)); //TODO Check this
 
 		mGrid.setOnQuickActionClickListener(mActionListener);
 	}

@@ -25,7 +25,7 @@ import ir.secure_msg.main.HomePage;
 import android.content.Intent;
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
-import android.secure.message.R;
+import ir.secure_msg.R;
 
 public class SettingsActivity extends PreferenceActivity {
 	@Override

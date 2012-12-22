@@ -46,7 +46,7 @@ import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.secure.message.R;
+import ir.secure_msg.R;
 import android.telephony.SmsManager;
 import android.util.Log;
 import android.view.View;

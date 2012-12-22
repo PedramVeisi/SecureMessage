@@ -22,7 +22,7 @@ package ir.secure_msg.main;
 
 import android.content.Intent;
 import android.net.Uri;
-import android.secure.message.R;
+import ir.secure_msg.R;
 
 import greendroid.app.GDApplication;
 

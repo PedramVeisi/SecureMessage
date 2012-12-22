@@ -97,11 +97,11 @@ public class InboxActivity extends GDListActivity implements
 
 			if (tm.getName().endsWith("Unknown")) {
 				row = new ThumbnailItem(tm.getNumber(), tm.getLastText(),
-						android.secure.message.R.drawable.icon);
+						ir.secure_msg.R.drawable.icon); //TODO Check this
 			} else {
 				row = new ThumbnailItem(
 						tm.getName() + "," + tm.getFamiliName(),
-						tm.getLastText(), android.secure.message.R.drawable.icon);
+						tm.getLastText(), ir.secure_msg.R.drawable.icon); //TODO Check this
 			}
 
 			row.setTag(tm);
@@ -142,7 +142,7 @@ public class InboxActivity extends GDListActivity implements
 		MenuInflater inflater = getMenuInflater();
 		AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) menuInfo;
 
-		inflater.inflate(android.secure.message.R.menu.operation_menu, menu);
+		inflater.inflate(ir.secure_msg.R.menu.operation_menu, menu); //TODO Check
 		/*
 		 * Toast.makeText(InboxActivity.this, info.position, Toast.LENGTH_LONG)
 		 * .show();
@@ -204,7 +204,7 @@ public class InboxActivity extends GDListActivity implements
 		final Contacts clickedrow = (Contacts) clickedItem.getTag();
 		switch (item.getItemId()) {
 
-		case android.secure.message.R.id.Reply:
+		case ir.secure_msg.R.id.Reply: //TODO Check
 			Intent newMsg = new Intent(InboxActivity.this,
 					CreateEncryptedSMS.class);
 
@@ -221,10 +221,10 @@ public class InboxActivity extends GDListActivity implements
 								 */
 
 			break;
-		case android.secure.message.R.id.Open:
+		case ir.secure_msg.R.id.Open: //TODO Check
 
 			break;
-		case android.secure.message.R.id.Delete:
+		case ir.secure_msg.R.id.Delete: //TODO Check
 			AlertDialog alertDialog = new AlertDialog.Builder(
 					InboxActivity.this).create();
 
@@ -235,7 +235,7 @@ public class InboxActivity extends GDListActivity implements
 			alertDialog.setMessage("You are going to delete your whole of the conversation with the number: "+clickedrow.getNumber());
 
 			// Setting Icon to Dialog
-			alertDialog.setIcon(android.secure.message.R.drawable.remove);
+			alertDialog.setIcon(ir.secure_msg.R.drawable.remove); //TODO Check
 
 			// Setting OK Button
 			alertDialog.setButton("Delete", new DialogInterface.OnClickListener() {

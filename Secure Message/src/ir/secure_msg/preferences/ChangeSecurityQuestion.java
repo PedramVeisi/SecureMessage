@@ -23,7 +23,7 @@ package ir.secure_msg.preferences;
 import android.app.Activity;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.secure.message.R;
+import ir.secure_msg.R;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;

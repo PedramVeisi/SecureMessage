@@ -20,9 +20,9 @@
 
 package ir.secure_msg.documents;
 
+import ir.secure_msg.R;
 import android.app.Activity;
 import android.os.Bundle;
-import android.secure.message.R;
 import android.widget.TextView;
 
 public class AboutUs extends Activity {
