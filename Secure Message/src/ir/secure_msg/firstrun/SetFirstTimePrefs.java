@@ -21,6 +21,8 @@
 package ir.secure_msg.firstrun;
 
 
+import java.io.File;
+
 import ir.secure_msg.main.HomePage;
 import ir.secure_msg.preferences.HandlePreferences;
 import ir.secure_msg.preferences.PreferencesInterface;
@@ -37,12 +39,17 @@ import android.widget.Button;
 
 public class SetFirstTimePrefs extends PreferenceActivity implements PreferencesInterface {
 
+	private final String KEYS_FOLDER_NAME = "keys";
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.first_time_prefs);
 		addPreferencesFromResource(R.xml.first_time_preferences);
+		
+		//Create keys folder in internal file folder
+		boolean success = (new File(getFilesDir() + "/" + KEYS_FOLDER_NAME)).mkdirs();
 
 		setUpViews();
 		

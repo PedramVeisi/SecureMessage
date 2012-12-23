@@ -72,7 +72,7 @@ public class ManageKeys extends ListActivity {
 	private final int MENU_ITEM_3_REMOVE = 3;
 	
 	private String APP_NAME = "SecureMessage";
-	private String KEYS_FOLDER_NAME = "keys";
+	private final String KEYS_FOLDER_NAME = "keys";
 	
 	String listSelectedItemName;
 
@@ -83,12 +83,7 @@ public class ManageKeys extends ListActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.generate_key);
-		
-		boolean success = (new File(getFilesDir() + "/" + KEYS_FOLDER_NAME)).mkdirs();
-		if (!success) {
-		    // Directory creation failed
-		}
-		
+
 		setUpViews();
 	}
 
@@ -147,7 +142,7 @@ public class ManageKeys extends ListActivity {
 												
 												CopyFile.copyFile(sourceKeyFile, destinationKeyFile);
 												
-												Toast.makeText(getApplicationContext(), "Exported to " + destinationKeyAddr, Toast.LENGTH_LONG).show();
+												Toast.makeText(getApplicationContext(), R.string.exported_to + destinationKeyAddr, Toast.LENGTH_LONG).show();
 												
 												
 											} catch (IOException e) {
@@ -179,8 +174,8 @@ public class ManageKeys extends ListActivity {
 							
 							alert = new AlertDialog.Builder(ManageKeys.this);
 
-							alert.setTitle("Warning");
-							alert.setMessage( "Be aware that this key can decrypt encrypted messages with public pair and exporting makes it avaiable to other applications.");
+							alert.setTitle(R.string.warning);
+							alert.setMessage( R.string.private_key_export_warning);
 
 							alert.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
 								public void onClick(DialogInterface dialog, int whichButton) {
@@ -210,7 +205,7 @@ public class ManageKeys extends ListActivity {
 														
 														CopyFile.copyFile(sourceKeyFile, destinationKeyFile);
 														
-														Toast.makeText(getApplicationContext(), "Exported to " + destinationKeyAddr, Toast.LENGTH_LONG).show();
+														Toast.makeText(getApplicationContext(), R.string.exported_to + destinationKeyAddr, Toast.LENGTH_LONG).show();
 														
 														
 													} catch (IOException e) {
@@ -261,14 +256,14 @@ public class ManageKeys extends ListActivity {
 												setUpList();
 											} else
 												showAlertDialog(FAILURE,
-														"FAILURE",
+														getString(R.string.failure),
 														getString(R.string.deletion_failed));
 											/*OK button function*/
 											
 										}
 									});
 
-							alert.setNegativeButton("Cancel",
+							alert.setNegativeButton(R.string.cancel,
 									new DialogInterface.OnClickListener() {
 										public void onClick(
 												DialogInterface dialog,
