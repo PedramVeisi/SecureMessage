@@ -45,11 +45,12 @@
         android:layout_height="fill_parent"
         android:layout_above="@+id/linearLayout1"
         android:layout_below="@id/selected_file_text"
-        android:background="@drawable/text_edit_background"
         android:gravity="top"
         android:inputType="textMultiLine"
         android:hint="@string/enter_your_text_"
+        android:background="@drawable/text_edit_background"
         >
+        <!-- android:background="@drawable/text_edit_background" -->
 
     </EditText>
 
@@ -66,9 +67,10 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/buttons_layout"
             android:text="@string/clear"
-            android:textColor="#FFFFFF" >
+            android:textColor="#FFFFFF"
+            android:background="@drawable/buttons_layout"
+            >
         </Button>
 
         <Button
@@ -76,9 +78,10 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/buttons_layout"
             android:text="@string/encrypt_text"
-            android:textColor="#FFFFFF" >
+            android:textColor="#FFFFFF"
+            android:background="@drawable/buttons_layout"
+            >
         </Button>
 
         <Button
@@ -86,9 +89,10 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/buttons_layout"
             android:text="@string/send_sms"
-            android:textColor="#FFFFFF" >
+            android:textColor="#FFFFFF"
+            android:background="@drawable/buttons_layout"
+            >
         </Button>
     </LinearLayout>
 
