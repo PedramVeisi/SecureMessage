@@ -52,6 +52,7 @@ import ir.secure_msg.R;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.AdapterView.OnItemLongClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -327,23 +328,22 @@ public class ManageKeys extends ListActivity {
 				android.R.layout.simple_list_item_1, folderNames));
 		// registerForContextMenu(getListView());
 
-		getListView().setOnItemLongClickListener(itemLongClickHandler);
+		getListView().setOnItemClickListener(itemClickHandler);
 
 	}
 
 	/**
 	 * list item long click handler used to show the context menu
 	 */
-	private OnItemLongClickListener itemLongClickHandler = new OnItemLongClickListener() {
+	private OnItemClickListener itemClickHandler = new OnItemClickListener() {
 
-		public boolean onItemLongClick(AdapterView<?> parent, View view,
+		public void onItemClick(AdapterView<?> parent, View view,
 				int position, long id) {
 
 			listSelectedItemName = (String) getListView().getAdapter().getItem(
 					position);
 
 			showDialog(CONTEXT_MENU_ID);
-			return true;
 		}
 	};
 
