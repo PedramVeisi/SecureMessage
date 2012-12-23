@@ -53,7 +53,6 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
-import android.widget.AdapterView.OnItemLongClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -72,8 +71,9 @@ public class ManageKeys extends ListActivity {
 	private final int MENU_ITEM_2_EXPORT_PRIVATE = 2;
 	private final int MENU_ITEM_3_REMOVE = 3;
 	
-	private String APP_NAME = "AndroidSecureMessage";
-
+	private String APP_NAME = "SecureMessage";
+	private String KEYS_FOLDER_NAME = "keys";
+	
 	String listSelectedItemName;
 
 	// It's here so the Thread inner class can see it
@@ -83,6 +83,12 @@ public class ManageKeys extends ListActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.generate_key);
+		
+		boolean success = (new File(getFilesDir() + "/" + KEYS_FOLDER_NAME)).mkdirs();
+		if (!success) {
+		    // Directory creation failed
+		}
+		
 		setUpViews();
 	}
 
@@ -131,7 +137,7 @@ public class ManageKeys extends ListActivity {
 											String exportedKeyName = input.getText().toString();
 											// Pair Name is entered
 
-											String sourceKeyAddr = getCacheDir() + "/" + listSelectedItemName + "/" + "public.key";
+											String sourceKeyAddr = getFilesDir() + "/" + KEYS_FOLDER_NAME + "/" + listSelectedItemName + "/" + "public.key";
 											String destinationKeyAddr = Environment.getExternalStorageDirectory() + "/" + APP_NAME + "/" + exportedKeyName + "_public.key";
 											
 											File sourceKeyFile = new File(sourceKeyAddr);
@@ -194,7 +200,7 @@ public class ManageKeys extends ListActivity {
 													String exportedKeyName = input.getText().toString();
 													// Pair Name is entered
 
-													String sourceKeyAddr = getCacheDir() + "/" + listSelectedItemName + "/" + "private.key";
+													String sourceKeyAddr = getFilesDir() + "/" + KEYS_FOLDER_NAME + "/" + listSelectedItemName + "/" + "private.key";
 													String destinationKeyAddr = Environment.getExternalStorageDirectory() + "/" + APP_NAME + "/" + exportedKeyName + "_private.key";
 													
 													File sourceKeyFile = new File(sourceKeyAddr);
@@ -322,12 +328,11 @@ public class ManageKeys extends ListActivity {
 	}
 
 	private void setUpList() {
-
+		
 		ArrayList<String> folderNames = getCurrentPairsNames();
 		setListAdapter(new ArrayAdapter<String>(this,
 				android.R.layout.simple_list_item_1, folderNames));
-		// registerForContextMenu(getListView());
-
+				
 		getListView().setOnItemClickListener(itemClickHandler);
 
 	}
@@ -384,7 +389,7 @@ public class ManageKeys extends ListActivity {
 		if (folder == null)
 			showAlertDialog(FAILURE, getString(R.string.error), getString(R.string.something_went_wrong));
 
-		File pairDirectory = new File(getCacheDir() + "/" + folder);
+		File pairDirectory = new File(getFilesDir() + "/" + KEYS_FOLDER_NAME + "/" + folder);
 
 		if (!pairDirectory.exists())
 			showAlertDialog(FAILURE, getString(R.string.error), getString(R.string.no_such_folder));
@@ -418,7 +423,8 @@ public class ManageKeys extends ListActivity {
 	private ArrayList<String> getCurrentPairsNames() {
 
 		ArrayList<String> folderNames = new ArrayList<String>();
-		File dir = new File(getCacheDir().toString());
+		
+		File dir = new File(getFilesDir() + "/" + KEYS_FOLDER_NAME);
 
 		File[] files = dir.listFiles();
 
@@ -463,7 +469,7 @@ public class ManageKeys extends ListActivity {
 	private int createPairFolder(String pairName) {
 
 		File newDir = null;
-		newDir = new File(getCacheDir(), pairName);
+		newDir = new File(getFilesDir() + "/" + KEYS_FOLDER_NAME, pairName);
 		if (!newDir.exists()) {
 			newDir.mkdirs();
 			return SUCESS;
@@ -507,7 +513,7 @@ public class ManageKeys extends ListActivity {
 	private void saveToFile(String pairName, String fileName,
 			BigInteger modulus, BigInteger exponent) throws IOException {
 
-		String pairFolderAddr = getCacheDir().toString() + "/" + pairName + "/";
+		String pairFolderAddr = getFilesDir().toString() + "/" + KEYS_FOLDER_NAME + "/" + pairName + "/";
 
 		ObjectOutputStream oout = new ObjectOutputStream(
 				new BufferedOutputStream(new FileOutputStream(pairFolderAddr
