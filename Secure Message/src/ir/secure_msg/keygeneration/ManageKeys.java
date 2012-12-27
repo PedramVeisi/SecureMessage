@@ -60,9 +60,9 @@ import android.widget.Toast;
 
 public class ManageKeys extends ListActivity {
 
-	int SUCESS = 0;
-	int FAILURE = 1;
-	int COMMON_WARNING = 2;
+	private int SUCESS = 0;
+	private int FAILURE = 1;
+	private int COMMON_WARNING = 2;
 
 	private final int CONTEXT_MENU_ID = 1;
 	private IconContextMenu iconContextMenu = null;

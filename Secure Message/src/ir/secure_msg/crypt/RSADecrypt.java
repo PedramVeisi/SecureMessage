@@ -32,7 +32,7 @@ import javax.crypto.NoSuchPaddingException;
 public class RSADecrypt {
 
 	private static String stringRestoredData;
-	public static String decrypt(byte[] text, PrivateKey key) {
+	public static String decrypt(byte[] text, PrivateKey key) throws InvalidKeyException {
 		
 		byte[] dectyptedText = null;
 		// decrypt the text using the private key
@@ -40,13 +40,11 @@ public class RSADecrypt {
 			Cipher cipher = Cipher.getInstance("RSA/ECB/PKCS1Padding");
 			cipher.init(Cipher.DECRYPT_MODE, key);
 			dectyptedText = cipher.doFinal(text);
+			stringRestoredData = new String(dectyptedText);
 		} catch (NoSuchAlgorithmException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (NoSuchPaddingException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (InvalidKeyException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (IllegalBlockSizeException e) {
@@ -56,8 +54,7 @@ public class RSADecrypt {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
-		stringRestoredData = new String(dectyptedText);
+	
 		return stringRestoredData;
 
 	}

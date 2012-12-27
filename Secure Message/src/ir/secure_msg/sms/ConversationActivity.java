@@ -27,15 +27,19 @@ import ir.secure_msg.crypt.XOREncryptDecrypt;
 import ir.secure_msg.database.Contacts;
 import ir.secure_msg.database.Database;
 import ir.secure_msg.database.Message;
+import ir.secure_msg.keygeneration.ManageKeys;
 
 import java.io.IOException;
+import java.security.InvalidKeyException;
 import java.security.PrivateKey;
 import java.util.ArrayList;
 import java.util.List;
 
 
 
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.ColorFilter;
@@ -68,6 +72,9 @@ public class ConversationActivity extends GDListActivity {
 	private List<Item> items;
 	private  ItemAdapter  adapter;
 	private String number;
+	
+	private int SUCESS = 0;
+	private int FAILURE = 1;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -147,12 +154,22 @@ public class ConversationActivity extends GDListActivity {
 			Log.d("checkpoin3", "ok!");
 			String add = lis.getKeyAddresss();
 			Log.d("checkpoin4", lis.getKeyAddresss());
-			PrivateKey privateKey = ReadKey.readPrivateKeyFromFile(add);
+			PrivateKey privateKey = null;
+			try {
+				privateKey = ReadKey.readPrivateKeyFromFile(add);
+			} catch (InvalidKeyException e1) {
+				showAlertDialog(FAILURE, getString(R.string.failure), getString(R.string.invalid_key));
+				e1.printStackTrace();
+			}
 			Log.d("checkpoin5", "ok!");
 			try {
-				tmp = RSADecrypt.decrypt(
-						Base64.decode(cipher.substring(RSA_PREFIX.length())),
-						privateKey);
+				try {
+					tmp = RSADecrypt.decrypt(
+							Base64.decode(cipher.substring(RSA_PREFIX.length())),
+							privateKey);
+				} catch (InvalidKeyException e) {
+					showAlertDialog(FAILURE, getString(R.string.failure), getString(R.string.invalid_key));
+				}
 				Log.d("checkpoin6", "ok!");
 			} catch (IOException e) {
 				Log.d("checkpoin7", "ok!");
@@ -242,5 +259,25 @@ public class ConversationActivity extends GDListActivity {
 		
 		
 	}
+	
+	private void showAlertDialog(int status, String title, String message) {
+
+		// TODO setup status for success and failure.
+
+		AlertDialog.Builder alert = new AlertDialog.Builder(ConversationActivity.this);
+
+		alert.setTitle(title);
+		alert.setMessage(message);
+
+		alert.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
+			public void onClick(DialogInterface dialog, int whichButton) {
+
+			}
+		});
+
+		alert.show();
+
+	}
+	
 
 }

@@ -26,6 +26,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.math.BigInteger;
+import java.security.InvalidKeyException;
 import java.security.KeyFactory;
 import java.security.PrivateKey;
 import java.security.PublicKey;
@@ -61,7 +62,7 @@ public class ReadKey {
 		}
 	}
 	
-	public static PrivateKey readPrivateKeyFromFile(String keyFilePath) {
+	public static PrivateKey readPrivateKeyFromFile(String keyFilePath) throws InvalidKeyException {
 
 		ObjectInputStream oin = null;
 
@@ -84,6 +85,9 @@ public class ReadKey {
 				oin.close();
 			} catch (IOException e) {
 				e.printStackTrace();
+			}
+			catch (NullPointerException e) {
+				throw new InvalidKeyException();
 			}
 		}
 	}
