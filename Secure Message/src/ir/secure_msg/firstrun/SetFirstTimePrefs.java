@@ -94,9 +94,9 @@ public class SetFirstTimePrefs extends PreferenceActivity implements Preferences
 	
 	void showWarning(String message){
 		AlertDialog alertDialog = new AlertDialog.Builder(SetFirstTimePrefs.this).create();
-		alertDialog.setTitle("Warning...");
+		alertDialog.setTitle(getString(R.string.warning));
 		alertDialog.setMessage(message);
-		alertDialog.setButton("OK", new DialogInterface.OnClickListener() {
+		alertDialog.setButton(getString(R.string.ok), new DialogInterface.OnClickListener() {
 		      public void onClick(DialogInterface dialog, int which) {
 		    	  
 		    } });

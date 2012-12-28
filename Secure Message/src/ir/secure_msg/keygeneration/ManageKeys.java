@@ -62,7 +62,7 @@ public class ManageKeys extends ListActivity {
 
 	private int SUCESS = 0;
 	private int FAILURE = 1;
-	private int COMMON_WARNING = 2;
+	//private int COMMON_WARNING = 2;
 
 	private final int CONTEXT_MENU_ID = 1;
 	private IconContextMenu iconContextMenu = null;
