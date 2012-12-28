@@ -98,4 +98,6 @@
 	<string name="private_key_export_warning">Be aware that this key can decrypt encrypted messages with public pair and exporting makes it avaiable to other applications.</string>
 	<string name="failure">FAILURE</string>
 	<string name="invalid_key">Invalid Key!</string>
+	<string name="security_answer_is_incorrect">Security Answer is incorrect!</string>
+	<string name="fill_text_field">Fill text field</string>
 	</resources>

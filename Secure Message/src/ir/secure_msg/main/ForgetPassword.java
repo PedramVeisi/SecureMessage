@@ -79,7 +79,7 @@ public class ForgetPassword extends Activity implements PreferencesInterface {
 					startActivity(intent);
 					finish();
 				}else{
-					wrongSecAnswer.setText("Security Answer is incorrect!");
+					wrongSecAnswer.setText(R.string.security_answer_is_incorrect);
 					securityAnswerField.setText("");
 					securityAnswerField.requestFocus();
 				}				

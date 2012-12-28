@@ -207,7 +207,7 @@ public class CreateEncryptedSMS extends Activity implements
 						clearEncryptedTextButton.setTextColor(Color.RED);
 					}
 				} else {
-					Toast.makeText(CreateEncryptedSMS.this, "Fill text field",
+					Toast.makeText(CreateEncryptedSMS.this, R.string.fill_text_field,
 							Toast.LENGTH_SHORT).show();
 				}
 
@@ -305,7 +305,7 @@ public class CreateEncryptedSMS extends Activity implements
 				AlertDialog.Builder alert = new AlertDialog.Builder(
 						CreateEncryptedSMS.this);
 
-				alert.setTitle("Warning!");
+				alert.setTitle(R.string.warning);
 				alert.setMessage("Text is not encrypted.Continue?");
 
 				alert.setPositiveButton(R.string.ok,
