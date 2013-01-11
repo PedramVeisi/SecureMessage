@@ -3,162 +3,169 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     package="ir.secure_msg"
     android:versionCode="1"
-    android:versionName="1.1"
+    android:versionName="1.0"
     android:installLocation="auto"
     >
-    <uses-sdk android:minSdkVersion="7" />
+ 	
+ 	<uses-sdk android:minSdkVersion="8" android:targetSdkVersion="15" />
+ 	
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.READ_CONTACTS"/>
     <uses-permission android:name="android.permission.SEND_SMS"/>
 	<uses-permission android:name="android.permission.RECEIVE_SMS" />
+	
+	
     <application
         android:icon="@drawable/app_icon"
-        android:label="@string/app_name" android:theme="@style/Theme.GDActionBarExample" android:name=".main.SecureMessageApplication">
-        <activity
-            android:name=".main.AppStart"
-            android:label="@string/app_name"
-            android:theme="@android:style/Theme.Dialog">
-
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-
-        <activity
-            android:name=".main.HomePage"
-            android:label="@string/app_name"
-            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        android:label="@string/app_name"
+        android:theme="@style/Theme.GDActionBarExample"
+        android:name=".main.SecureMessageApplication">
         
-        <activity
-            android:name=".main.ForgetPassword"
-            android:theme="@android:style/Theme.Dialog"
-            android:label="@string/password_recovery" >
-            
-            <intent-filter>
-                <action android:name="ir.secure_msg.main.ForgetPasswordDialog" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-            
-        </activity>
-        
-
-        <activity
-            android:name=".keygeneration.ManageKeys"
-            android:theme="@android:style/Theme.Light" />
-
-        <activity
-            android:name=".sms.CreateEncryptedSMS"
-            android:label=""
-            android:theme="@android:style/Theme.Light"
-            />
-
-        <activity
-            android:name=".preferences.SettingsActivity"
-            android:theme="@android:style/Theme.Light" />
-
-        <activity
-            android:name=".preferences.HandlePreferences"
-            android:theme="@android:style/Theme.Light" />
-
-        <activity
-            android:name=".preferences.ChangeAppPassword"
-            android:theme="@android:style/Theme.Dialog"
-            android:label="@string/change_app_password"
-            >
-
-            <intent-filter>
-                <action android:name="ir.secure_msg.preferences.ChangeAppPasswordDialog" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-
-        </activity>
-        
-         <activity
-            android:name=".preferences.ChangeSecurityQuestion"
-            android:theme="@android:style/Theme.Dialog"
-            android:label="@string/change_security_question"
-            >
-
-            <intent-filter>
-                <action android:name="ir.secure_msg.preferences.ChangeSecurityQuestionDialog" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-
-        </activity>
-        
-        <activity 
-            android:name=".IO.FilePickerActivity"
-            android:label="@string/app_name"
-            android:theme="@android:style/Theme.Dialog"
-            />
-
-           
-        <activity 
-            android:name=".documents.AboutUs"
-            android:label="@string/app_name"
-            android:theme="@android:style/Theme.Light"
-            />
-        
-        
-        <activity 
-            android:name=".firstrun.SetFirstTimePrefs"
-            android:label="@string/set_app_prefs"
-            android:theme="@android:style/Theme.Light"
-            />
-        
-        <activity
-            android:name=".preferences.AppMode"
-            android:theme="@android:style/Theme.Dialog"
-            android:label="Select application mode"
-            >
-         
-            <intent-filter>
-                <action android:name="ir.secure_msg.firstrun.AppModeDialog" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-            
-          </activity>
-          
-        <activity 
-            android:name=".firstrun.SetAppPassword"
-            android:label="@string/set_app_pass"
-            android:theme="@android:style/Theme.Dialog"
-            >
-            
-            <intent-filter>
-                <action android:name="ir.secure_msg.firstrun.SetAppPasswordDialog" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-
-        </activity>
-        
-        
-        
-        <activity 
-            android:name=".firstrun.SetSecurityQuestion"
-            android:label="@string/set_security_question"
-            android:theme="@android:style/Theme.Dialog"
-            >
-            
-            <intent-filter>
-                <action android:name="ir.secure_msg.firstrun.SetSecurityQuestionDialog" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-
-        </activity>
-        
-         <receiver  android:name=".sms.SMSListener" >
-            <intent-filter android:priority="100" >
-                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
-            </intent-filter>
-        </receiver>   
-            
-        <activity 
-            android:name=".sms.InboxActivity"
-            android:label="Inbox"
-            />
-        <activity android:name=".sms.ConversationActivity"></activity>
+	        <activity
+	            android:name=".main.AppStart"
+	            android:label="@string/app_name"
+	            android:theme="@android:style/Theme.Dialog">
+	
+	            <intent-filter>
+	                <action android:name="android.intent.action.MAIN" />
+	                <category android:name="android.intent.category.LAUNCHER" />
+	            </intent-filter>
+	        </activity>
+	
+	        <activity
+	            android:name=".main.HomePage"
+	            android:label="@string/app_name"
+	            android:theme="@android:style/Theme.Light.NoTitleBar" />
+	        
+	        <activity
+	            android:name=".main.ForgetPassword"
+	            android:theme="@android:style/Theme.Dialog"
+	            android:label="@string/password_recovery" >
+	            
+		            <intent-filter>
+		                <action android:name="ir.secure_msg.main.ForgetPasswordDialog" />
+		                <category android:name="android.intent.category.DEFAULT" />
+		            </intent-filter>
+	            
+	        </activity>
+	        
+	
+	        <activity
+	            android:name=".keygeneration.ManageKeys"
+	            android:theme="@android:style/Theme.Light" />
+	
+	        <activity
+	            android:name=".sms.CreateEncryptedSMS"
+	            android:label=""
+	            android:theme="@android:style/Theme.Light"
+	            />
+	
+	        <activity
+	            android:name=".preferences.SettingsActivity"
+	            android:theme="@android:style/Theme.Light" />
+	
+	        <activity
+	            android:name=".preferences.HandlePreferences"
+	            android:theme="@android:style/Theme.Light" />
+	
+	        <activity
+	            android:name=".preferences.ChangeAppPassword"
+	            android:theme="@android:style/Theme.Dialog"
+	            android:label="@string/change_app_password"
+	            >
+	
+	            <intent-filter>
+	                <action android:name="ir.secure_msg.preferences.ChangeAppPasswordDialog" />
+	                <category android:name="android.intent.category.DEFAULT" />
+	            </intent-filter>
+	
+	        </activity>
+	        
+	         <activity
+	            android:name=".preferences.ChangeSecurityQuestion"
+	            android:theme="@android:style/Theme.Dialog"
+	            android:label="@string/change_security_question"
+	            >
+	
+		            <intent-filter>
+		                <action android:name="ir.secure_msg.preferences.ChangeSecurityQuestionDialog" />
+		                <category android:name="android.intent.category.DEFAULT" />
+		            </intent-filter>
+	
+	        </activity>
+	        
+	        <activity 
+	            android:name=".IO.FilePickerActivity"
+	            android:label="@string/app_name"
+	            android:theme="@android:style/Theme.Dialog"
+	            />
+	
+	           
+	        <activity 
+	            android:name=".documents.AboutUs"
+	            android:label="@string/app_name"
+	            android:theme="@android:style/Theme.Light"
+	            />
+	        
+	        
+	        <activity 
+	            android:name=".firstrun.SetFirstTimePrefs"
+	            android:label="@string/set_app_prefs"
+	            android:theme="@android:style/Theme.Light"
+	            />
+	        
+	        <activity
+	            android:name=".preferences.AppMode"
+	            android:theme="@android:style/Theme.Dialog"
+	            android:label="Select application mode"
+	            >
+	         
+		            <intent-filter>
+		                <action android:name="ir.secure_msg.firstrun.AppModeDialog" />
+		                <category android:name="android.intent.category.DEFAULT" />
+		            </intent-filter>
+		            
+	          </activity>
+	          
+	        <activity 
+	            android:name=".firstrun.SetAppPassword"
+	            android:label="@string/set_app_pass"
+	            android:theme="@android:style/Theme.Dialog"
+	            >
+		            
+		            <intent-filter>
+		                <action android:name="ir.secure_msg.firstrun.SetAppPasswordDialog" />
+		                <category android:name="android.intent.category.DEFAULT" />
+		            </intent-filter>
+	
+	        </activity>
+	        
+	        
+	        
+	        <activity 
+	            android:name=".firstrun.SetSecurityQuestion"
+	            android:label="@string/set_security_question"
+	            android:theme="@android:style/Theme.Dialog"
+	            >
+	            
+		            <intent-filter>
+		                <action android:name="ir.secure_msg.firstrun.SetSecurityQuestionDialog" />
+		                <category android:name="android.intent.category.DEFAULT" />
+		            </intent-filter>
+	
+	        </activity>
+	        
+	         <receiver  android:name=".sms.SMSListener" >
+	            <intent-filter android:priority="100" >
+	                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+	            </intent-filter>
+	        </receiver>   
+	            
+	        <activity 
+	            android:name=".sms.InboxActivity"
+	            android:label="Inbox"
+	            />
+	        <activity android:name=".sms.ConversationActivity"></activity>
 
     </application>
 </manifest>

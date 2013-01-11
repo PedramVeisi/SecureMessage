@@ -24,6 +24,7 @@ import ir.secure_msg.IO.FilePickerActivity;
 import ir.secure_msg.database.Contacts;
 import ir.secure_msg.database.DaoSession;
 import ir.secure_msg.database.Database;
+import ir.secure_msg.database.Message;
 import ir.secure_msg.preferences.HandlePreferences;
 import ir.secure_msg.preferences.PreferencesInterface;
 import ir.secure_msg.preferences.SettingsActivity;
@@ -242,6 +243,7 @@ public class InboxActivity extends GDListActivity implements
 				public void onClick(DialogInterface dialog, int which) {
 					// Write your code here to execute after dialog closed
 					clickedrow.__setDaoSession(dao);
+					
 					clickedrow.delete();
 					items.remove(clickedItem);
 					adapter.notifyDataSetChanged();

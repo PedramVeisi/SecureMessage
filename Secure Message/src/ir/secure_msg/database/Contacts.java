@@ -25,6 +25,7 @@ public class Contacts implements Serializable {
 
     /** Used for active entity operations. */
     public transient ContactsDao myDao;
+    public transient MessageDao msgDao;
 
     private List<Message> messageList;
 
@@ -48,6 +49,7 @@ public class Contacts implements Serializable {
     public void __setDaoSession(DaoSession daoSession) {
         this.daoSession = daoSession;
         myDao = daoSession != null ? daoSession.getContactsDao() : null;
+        msgDao = daoSession != null ? daoSession.getMessageDao() : null;
     }
 
     public Long getId() {
@@ -119,7 +121,10 @@ public class Contacts implements Serializable {
     public void delete() {
         if (myDao == null) {
             throw new DaoException("Entity is detached from DAO context");
-        }    
+        } 
+        for(int i=0;i<this.getMessageList().size();i++){
+        	msgDao.delete(this.getMessageList().get(i));
+        }
         myDao.delete(this);
     }
 

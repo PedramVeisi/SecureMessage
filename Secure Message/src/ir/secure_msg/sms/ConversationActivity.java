@@ -20,6 +20,7 @@
 
 package ir.secure_msg.sms;
 
+import ir.secure_msg.IO.FilePickerActivity;
 import ir.secure_msg.crypt.Base64;
 import ir.secure_msg.crypt.RSADecrypt;
 import ir.secure_msg.crypt.ReadKey;
@@ -29,13 +30,12 @@ import ir.secure_msg.database.Database;
 import ir.secure_msg.database.Message;
 import ir.secure_msg.keygeneration.ManageKeys;
 
+import java.io.File;
 import java.io.IOException;
 import java.security.InvalidKeyException;
 import java.security.PrivateKey;
 import java.util.ArrayList;
 import java.util.List;
-
-
 
 import android.app.AlertDialog;
 import android.content.Context;
@@ -65,14 +65,16 @@ import greendroid.widget.item.SeparatorItem;
 import greendroid.widget.item.ThumbnailItem;
 
 public class ConversationActivity extends GDListActivity {
+	
+	private static final int REQUEST_PICK_FILE = 1;
 	private final String XOR_PREFIX = "%@%";
 	private final String RSA_PREFIX = "$@$";
 	private Contacts lis;
 	private QuickActionWidget mGrid;
 	private List<Item> items;
-	private  ItemAdapter  adapter;
+	private ItemAdapter adapter;
 	private String number;
-	
+	private Contacts handler;
 	private int SUCESS = 0;
 	private int FAILURE = 1;
 
@@ -80,20 +82,21 @@ public class ConversationActivity extends GDListActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
-		 prepareQuickActionGrid();
+		prepareQuickActionGrid();
 		addActionBarItem(Type.Edit);
 		Log.d("Perfectgd", "Perfect");
 		Bundle extras = getIntent().getExtras();
-		
+
 		Log.d("Perfectgd", "Perfect");
 		lis = (Contacts) extras.getSerializable("person");
-		number=lis.getNumber();
+		
+		number = lis.getNumber();
 		Log.d("after", "ok1");
 		Database tmp = new Database(this);
 		List<Message> msgs = tmp.getMessage(lis);
 		Log.d("after", "ok2!");
 		// Collections.sort(msgs, new mycmp());
-		 items = new ArrayList<Item>();
+		items = new ArrayList<Item>();
 		Log.d("after", "ok3");
 		// items.add(new DescriptionItem(res.get(0).getBody()));
 		// System.out.println(key);
@@ -102,23 +105,23 @@ public class ConversationActivity extends GDListActivity {
 		 */
 
 		// List<msg> res=new ArrayList<msg>();
-
+		
 		for (int i = 0; i < msgs.size(); i++) {
 			Log.d("checkpoin1", "ok!");
 			String body = msgs.get(i).getBody();
 			Log.d("checkpoin2", "ok!");
 			if (msgs.get(i).getMine()) {// belomgs to owner
 				items.add(new SeparatorItem("Me"));
-				ThumbnailItem g = new ThumbnailItem("Date and Time inderted",
-						"More Info", R.drawable.icon);
+				ThumbnailItem g = new ThumbnailItem(msgs.get(i).getDate()
+						.toLocaleString(), "More Info", R.drawable.icon);
 				g.setTag(lis);
 				items.add(g);
 				items.add(new DescriptionItem(body));
 			} else {// belongs to others
 				items.add(new SeparatorItem(lis.getName() + ","
 						+ lis.getFamiliName()));
-				ThumbnailItem g = new ThumbnailItem("Date and Time inderted",
-						"More Info", R.drawable.icon);
+				ThumbnailItem g = new ThumbnailItem(msgs.get(i).getDate()
+						.toLocaleString(), "More Info", R.drawable.icon);
 				g.setTag(lis);
 				items.add(g);
 				items.add(new DescriptionItem(body));
@@ -132,7 +135,7 @@ public class ConversationActivity extends GDListActivity {
 		}
 		adapter = new ItemAdapter(this, items);
 		setListAdapter(adapter);
-
+		
 	}
 
 	@Override
@@ -158,17 +161,18 @@ public class ConversationActivity extends GDListActivity {
 			try {
 				privateKey = ReadKey.readPrivateKeyFromFile(add);
 			} catch (InvalidKeyException e1) {
-				showAlertDialog(FAILURE, getString(R.string.failure), getString(R.string.invalid_key));
+				showAlertDialog(FAILURE, getString(R.string.failure),
+						getString(R.string.invalid_key));
 				e1.printStackTrace();
 			}
 			Log.d("checkpoin5", "ok!");
 			try {
 				try {
-					tmp = RSADecrypt.decrypt(
-							Base64.decode(cipher.substring(RSA_PREFIX.length())),
-							privateKey);
+					tmp = RSADecrypt.decrypt(Base64.decode(cipher
+							.substring(RSA_PREFIX.length())), privateKey);
 				} catch (InvalidKeyException e) {
-					showAlertDialog(FAILURE, getString(R.string.failure), getString(R.string.invalid_key));
+					showAlertDialog(FAILURE, getString(R.string.failure),
+							getString(R.string.invalid_key));
 				}
 				Log.d("checkpoin6", "ok!");
 			} catch (IOException e) {
@@ -205,7 +209,10 @@ public class ConversationActivity extends GDListActivity {
 		mGrid.addQuickAction(new MyQuickAction(this,
 				R.drawable.gd_action_bar_compose, R.string.gd_compose));
 		mGrid.addQuickAction(new MyQuickAction(this,
-				R.drawable.gd_action_bar_search, ir.secure_msg.R.string.decrypt)); //TODO Check this
+				R.drawable.gd_action_bar_search, ir.secure_msg.R.string.decrypt)); // TODO
+																					// Check
+		mGrid.addQuickAction(new MyQuickAction(this,
+				R.drawable.gd_action_bar_edit, ir.secure_msg.R.string.change));																		// this
 
 		mGrid.setOnQuickActionClickListener(mActionListener);
 	}
@@ -222,14 +229,17 @@ public class ConversationActivity extends GDListActivity {
 				break;
 			case 1:
 				Toast.makeText(ConversationActivity.this,
-						"Decryption is Starting....", Toast.LENGTH_SHORT).show();
+						"Decryption is Starting....", Toast.LENGTH_SHORT)
+						.show();
 				changeValue(items);
 				adapter.notifyDataSetChanged();
 				break;
+			case 2:
+				browse();
 			default:
 				break;
 			}
-			
+
 		}
 	};
 
@@ -249,35 +259,76 @@ public class ConversationActivity extends GDListActivity {
 		}
 
 	}
-	private void changeValue(List<Item> item){
-		for(int i=2;i<item.size();i+=3){
-			DescriptionItem tmp=(DescriptionItem) item.get(i);
-			tmp.text=realText(tmp.text);
-			
-			
+
+	private void changeValue(List<Item> item) {
+		for (int i = 2; i < item.size(); i += 3) {
+			DescriptionItem tmp = (DescriptionItem) item.get(i);
+			tmp.text = realText(tmp.text);
+
 		}
-		
-		
+
 	}
-	
+
 	private void showAlertDialog(int status, String title, String message) {
 
 		// TODO setup status for success and failure.
 
-		AlertDialog.Builder alert = new AlertDialog.Builder(ConversationActivity.this);
+		AlertDialog.Builder alert = new AlertDialog.Builder(
+				ConversationActivity.this);
 
 		alert.setTitle(title);
 		alert.setMessage(message);
 
-		alert.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
-			public void onClick(DialogInterface dialog, int whichButton) {
+		alert.setPositiveButton(R.string.ok,
+				new DialogInterface.OnClickListener() {
+					public void onClick(DialogInterface dialog, int whichButton) {
 
-			}
-		});
+					}
+				});
 
 		alert.show();
 
 	}
-	
+
+	private void browse() {
+
+		// Create a new Intent for the file picker activity
+		Intent intent = new Intent(getApplicationContext(),
+				FilePickerActivity.class);
+
+		startActivityForResult(intent, REQUEST_PICK_FILE);
+
+	}
+
+	@Override
+	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+		// TODO Auto-generated method stub
+		if (resultCode == RESULT_OK) {
+			switch (requestCode) {
+			case REQUEST_PICK_FILE:
+				if (data.hasExtra(FilePickerActivity.EXTRA_FILE_PATH)) {
+					// Get the file path
+					File f = new File(
+							data.getStringExtra(FilePickerActivity.EXTRA_FILE_PATH));
+
+					// Set the file path text view
+
+					String keyAddr = f.getPath();
+					int i = keyAddr.lastIndexOf('/');
+					String keyName = keyAddr.substring(i + 1);
+
+					
+					lis.setKeyAddresss(keyAddr);
+					Database tmp = new Database(getApplicationContext());
+					Log.d("check before", "ok");
+					tmp.updateContact(lis);
+					Toast.makeText(ConversationActivity.this, lis.getKeyAddresss(), 10000).show();
+					
+					
+
+				}
+			}
+		}
+	}
 
 }

@@ -100,4 +100,5 @@
 	<string name="invalid_key">Invalid Key!</string>
 	<string name="security_answer_is_incorrect">Security Answer is incorrect!</string>
 	<string name="fill_text_field">Fill text field</string>
+	<string name="change">Change Key</string>
 	</resources>

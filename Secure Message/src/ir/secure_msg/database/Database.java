@@ -70,6 +70,7 @@ public class Database extends GDActivity {
 		conts.where(Properties.Number.eq(number));
 		List<Contacts> t=conts.list();
 		MessageDao msgdao=this.daoSession.getMessageDao();
+		
 		Message msg;
 		Log.d("DbProcess", "ok!");
 		if(t.size()!=0){
