@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with Secure Message.  If not, see <http://www.gnu.org/licenses/>.
 
- */
+ 
 
 package ir.secure_msg.sms;
 
@@ -100,9 +100,9 @@ public class ConversationActivity extends GDListActivity {
 		Log.d("after", "ok3");
 		// items.add(new DescriptionItem(res.get(0).getBody()));
 		// System.out.println(key);
-		/**
+		*//**
 		 * get query by key
-		 */
+		 *//*
 
 		// List<msg> res=new ArrayList<msg>();
 		
@@ -332,3 +332,4 @@ public class ConversationActivity extends GDListActivity {
 	}
 
 }
+*/

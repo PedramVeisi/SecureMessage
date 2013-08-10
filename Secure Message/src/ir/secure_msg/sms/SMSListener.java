@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with Secure Message.  If not, see <http://www.gnu.org/licenses/>.
 
- */
+ 
 
 package ir.secure_msg.sms;
 
@@ -81,3 +81,4 @@ public class SMSListener extends BroadcastReceiver {
 	}
 
 }
+*/

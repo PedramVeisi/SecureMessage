@@ -26,7 +26,7 @@ import ir.secure_msg.preferences.HandlePreferences;
 import ir.secure_msg.preferences.PreferencesInterface;
 import ir.secure_msg.preferences.SettingsActivity;
 import ir.secure_msg.sms.CreateEncryptedSMS;
-import ir.secure_msg.sms.InboxActivity;
+//import ir.secure_msg.sms.InboxActivity;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -120,7 +120,7 @@ public class HomePage extends Activity implements PreferencesInterface {
 		});
         
         
-        viewInboxButton.setOnClickListener(new OnClickListener() {
+        /*viewInboxButton.setOnClickListener(new OnClickListener() {
 			
 			@Override
 			public void onClick(View v) {
@@ -128,7 +128,7 @@ public class HomePage extends Activity implements PreferencesInterface {
 				startActivity(intent);
 				
 			}
-		});
+		});*/
         
 	}
 	

@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with Secure Message.  If not, see <http://www.gnu.org/licenses/>.
 
- */
+ 
 
 package ir.secure_msg.sms;
 
@@ -56,7 +56,7 @@ import android.widget.Toast;
 
 public class InboxActivity extends GDListActivity implements
 		PreferencesInterface {
-	/** Called when the activity is first created. */
+	*//** Called when the activity is first created. *//*
 	// public static final String SMS_RECEIVED =
 	// "android.provider.Telephony.SMS_RECEIVED";
 	public static Context contex;
@@ -144,10 +144,10 @@ public class InboxActivity extends GDListActivity implements
 		AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) menuInfo;
 
 		inflater.inflate(ir.secure_msg.R.menu.operation_menu, menu); //TODO Check
-		/*
+		
 		 * Toast.makeText(InboxActivity.this, info.position, Toast.LENGTH_LONG)
 		 * .show();
-		 */
+		 
 
 	}
 
@@ -210,7 +210,7 @@ public class InboxActivity extends GDListActivity implements
 					CreateEncryptedSMS.class);
 
 			newMsg.putExtra("destNumber", clickedrow.getNumber());
-			startActivity(newMsg);/*
+			startActivity(newMsg);
 								 * Dialog d=new Dialog(InboxActivity.this);
 								 * Window window=d.getWindow();
 								 * window.setFlags(WindowManager
@@ -219,7 +219,7 @@ public class InboxActivity extends GDListActivity implements
 								 * d.setTitle("Check");
 								 * //d.setContentView(R.layout
 								 * .home_page_simple);
-								 */
+								 
 
 			break;
 		case ir.secure_msg.R.id.Open: //TODO Check
@@ -319,18 +319,18 @@ public class InboxActivity extends GDListActivity implements
 					int i = keyAddr.lastIndexOf('/');
 					String keyName = keyAddr.substring(i + 1);
 
-					/*
+					
 					 * selectedFileTextOrError.setText(getResources().getString(
 					 * R.string.selected_file) + " " + keyName);
-					 */
+					 
 					// selectedFileTextOrError.setTextColor(Color.GREEN);
 
-					/*
+					
 					 * try { publicKey = readKeyFromFile(f.getPath()); } catch
 					 * (RuntimeException e) { selectedFileTextOrError
 					 * .setText(R.string.invalid_public_key);
 					 * selectedFileTextOrError.setTextColor(Color.RED); }
-					 */
+					 
 					// Intent intent = new Intent(InboxActivity.this,
 					// ConversationActivity.class);
 					handler.setKeyAddresss(keyAddr);
@@ -352,4 +352,4 @@ public class InboxActivity extends GDListActivity implements
 	}
 	// onlong
 	
-}
+}*/
