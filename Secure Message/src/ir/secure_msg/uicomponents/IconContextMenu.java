@@ -188,7 +188,7 @@ public class IconContextMenu implements DialogInterface.OnCancelListener,
 			TextView textView = (TextView) convertView;
 			textView.setTag(item);
 			textView.setText(item.text);
-			textView.setTextColor(Color.BLACK);
+			textView.setTextColor(Color.WHITE);
 			textView.setCompoundDrawablesWithIntrinsicBounds(item.image, null, null, null);
         	
 	        return textView;

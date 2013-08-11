@@ -2481,9 +2481,9 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int view_inbox=0x7f0201c9;
     }
     public static final class id {
-        public static final int Delete=0x7f0800f0;
-        public static final int Open=0x7f0800f1;
-        public static final int Reply=0x7f0800ef;
+        public static final int Delete=0x7f0800ed;
+        public static final int Open=0x7f0800ee;
+        public static final int Reply=0x7f0800ec;
         public static final int abs__action_bar=0x7f080050;
         public static final int abs__action_bar_container=0x7f08004f;
         public static final int abs__action_bar_subtitle=0x7f080041;
@@ -2589,8 +2589,6 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int end=0x7f080019;
         public static final int error_text=0x7f08008e;
         public static final int expanded_menu=0x7f0800a5;
-        public static final int export_private=0x7f0800ed;
-        public static final int export_public=0x7f0800ec;
         public static final int file_picker_image=0x7f0800a6;
         public static final int file_picker_text=0x7f0800a7;
         public static final int fill=0x7f08001a;
@@ -2658,7 +2656,6 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int progress_number=0x7f08007d;
         public static final int progress_percent=0x7f08007c;
         public static final int radio=0x7f0800c8;
-        public static final int remove_item=0x7f0800ee;
         public static final int resolver_grid=0x7f0800d6;
         public static final int retype_pass_field=0x7f08008d;
         public static final int retype_pass_text=0x7f08008c;
@@ -2852,8 +2849,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
     }
     public static final class menu {
         public static final int homepage_option_menu=0x7f0f0000;
-        public static final int keys_context_menu=0x7f0f0001;
-        public static final int operation_menu=0x7f0f0002;
+        public static final int operation_menu=0x7f0f0001;
     }
     public static final class raw {
         public static final int roboto_bold=0x7f070000;

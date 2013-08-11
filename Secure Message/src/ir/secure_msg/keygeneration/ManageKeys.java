@@ -95,6 +95,7 @@ public class ManageKeys extends ListActivity {
 
 		// init the menu
 		iconContextMenu = new IconContextMenu(this, CONTEXT_MENU_ID);
+		
 		iconContextMenu.addItem(res, R.string.export_public_key,
 				R.drawable.export, MENU_ITEM_1_EXPORT_PUBLIC);
 		iconContextMenu.addItem(res, R.string.export_private_key,
