@@ -101,12 +101,4 @@
 			</LinearLayout>
 		</TableRow>
 	</TableLayout>
-	<Button
-		android:layout_height="wrap_content"
-		android:layout_width="fill_parent"
-		android:id="@+id/donation_button"
-		android:text="@string/donation"
-		android:textStyle="bold"
-		></Button>
-
 </LinearLayout>
