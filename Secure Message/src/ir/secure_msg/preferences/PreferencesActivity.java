@@ -21,10 +21,11 @@
 
 package ir.secure_msg.preferences;
 
+import org.holoeverywhere.preference.PreferenceActivity;
+
 import ir.secure_msg.main.HomePage;
 import android.content.Intent;
 import android.os.Bundle;
-import android.preference.PreferenceActivity;
 import ir.secure_msg.R;
 
 public class PreferencesActivity extends PreferenceActivity {

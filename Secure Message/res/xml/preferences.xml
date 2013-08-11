@@ -1,40 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
-
+<PreferenceScreen xmlns:holo="http://schemas.android.com/apk/res-auto" >
+	
 	<PreferenceCategory
-		android:title="@string/app_password"
-		android:key="app_password_category">
+		holo:title="@string/app_password"
+		holo:key="app_password_category">
 		<Preference
-			android:key="change_app_password"
-			android:title="@string/change_app_password"
-			android:summary="@string/app_pass_description">
+			holo:key="change_app_password"
+			holo:title="@string/change_app_password"
+			holo:summary="@string/app_pass_description">
 
-			<intent android:action="ir.secure_msg.preferences.ChangeAppPasswordDialog" />
+			<intent holo:action="ir.secure_msg.preferences.ChangeAppPasswordDialog" />
 
 		</Preference>
 	</PreferenceCategory>
 	
-	    <PreferenceCategory
-        android:title="@string/security_question"
-        android:key="security_question_category"
+ 
+	<PreferenceCategory
+        holo:title="@string/security_question"
+        holo:key="security_question_category"
         >
         <Preference
-            android:key="change_security_question"
-            android:title="@string/change_security_question"
-            android:summary="@string/security_question_description"
+            holo:key="change_security_question"
+            holo:title="@string/change_security_question"
+            holo:summary="@string/security_question_description"
             >
-            <intent android:action="ir.secure_msg.preferences.ChangeSecurityQuestionDialog" />
+            <intent holo:action="ir.secure_msg.preferences.ChangeSecurityQuestionDialog" />
         </Preference>	
     </PreferenceCategory>
     
 	<PreferenceCategory
-        android:key="app_mode_category"
-        android:title="@string/app_mode" >
+        holo:key="app_mode_category"
+        holo:title="@string/app_mode" >
         <Preference
-            android:key="app_mode"
-            android:summary="@string/select_app_mode"
-            android:title="@string/app_mode" >
-            <intent android:action="ir.secure_msg.firstrun.AppModeDialog" />
+            holo:key="app_mode"
+            holo:summary="@string/select_app_mode"
+            holo:title="@string/app_mode" >
+            <intent holo:action="ir.secure_msg.firstrun.AppModeDialog" />
         </Preference>	
     </PreferenceCategory>
     
