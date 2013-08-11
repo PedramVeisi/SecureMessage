@@ -49,7 +49,7 @@
                     />
 	</RadioGroup>
 	
-    <org.holoeverywhere.widget.Button
+    <Button
                     android:id="@+id/app_mode_done"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"

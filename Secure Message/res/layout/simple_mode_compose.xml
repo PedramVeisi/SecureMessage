@@ -54,9 +54,8 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/buttons_layout"
             android:text="@string/encrypt_text"
-            android:textColor="#FFFFFF" >
+			>
         </Button>
 
         <Button
@@ -64,9 +63,8 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/buttons_layout"
             android:text="@string/send_sms"
-            android:textColor="#FFFFFF" >
+			>
         </Button>
     </LinearLayout>
 

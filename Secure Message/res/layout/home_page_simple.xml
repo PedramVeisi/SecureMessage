@@ -104,8 +104,6 @@
 	<Button
 		android:layout_height="wrap_content"
 		android:layout_width="fill_parent"
-		android:background="@drawable/buttons_layout"
-		android:textColor="#FFFFFF"
 		android:id="@+id/donation_button"
 		android:text="@string/donation"
 		android:textStyle="bold"

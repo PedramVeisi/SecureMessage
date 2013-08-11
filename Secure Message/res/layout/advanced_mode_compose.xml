@@ -24,8 +24,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/sms_receiver_autocomplete_textview"
         android:background="@drawable/buttons_layout"
-        android:text="@string/select_publickey_text"
-        android:textColor="#FFFFFF"
          >
     </Button>
 
@@ -68,8 +66,6 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/clear"
-            android:textColor="#FFFFFF"
-            android:background="@drawable/buttons_layout"
             >
         </Button>
 
@@ -79,8 +75,6 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/encrypt_text"
-            android:textColor="#FFFFFF"
-            android:background="@drawable/buttons_layout"
             >
         </Button>
 
@@ -90,8 +84,6 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/send_sms"
-            android:textColor="#FFFFFF"
-            android:background="@drawable/buttons_layout"
             >
         </Button>
     </LinearLayout>

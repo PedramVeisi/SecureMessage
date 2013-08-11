@@ -17,8 +17,6 @@
 		android:text="@string/generate_key_button"
 		android:layout_alignParentBottom="true"
 		android:layout_width="fill_parent"
-		android:background="@drawable/buttons_layout"
-		android:textColor="#FFFFFF"
 		></Button>
 	<ListView
 		android:id="@id/android:list"
