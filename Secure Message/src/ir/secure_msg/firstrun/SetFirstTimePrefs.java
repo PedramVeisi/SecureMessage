@@ -23,22 +23,24 @@ package ir.secure_msg.firstrun;
 
 import java.io.File;
 
+import org.holoeverywhere.app.AlertDialog;
+import org.holoeverywhere.app.AlertDialog.Builder;
+
+import com.actionbarsherlock.app.SherlockPreferenceActivity;
+
 import ir.secure_msg.main.HomePage;
 import ir.secure_msg.preferences.HandlePreferences;
 import ir.secure_msg.preferences.PreferencesInterface;
-import android.app.AlertDialog;
-import android.app.AlertDialog.Builder;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.preference.PreferenceActivity;
 import ir.secure_msg.R;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
-public class SetFirstTimePrefs extends PreferenceActivity implements PreferencesInterface {
+public class SetFirstTimePrefs extends SherlockPreferenceActivity implements PreferencesInterface {
 
 	private final String KEYS_FOLDER_NAME = "keys";
 	

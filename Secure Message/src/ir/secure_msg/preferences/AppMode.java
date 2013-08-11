@@ -20,7 +20,8 @@
 
 package ir.secure_msg.preferences;
 
-import android.app.Activity;
+import org.holoeverywhere.app.Activity;
+
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import ir.secure_msg.R;

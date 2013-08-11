@@ -67,7 +67,7 @@
 	<string name="set_app_pass">Set Application Password</string>
 	<string name="app_pass_description">You must enter this password every time you run secure message.</string>
 	<string name="start_app">Start Application</string>
-	<string name="set_app_prefs">Set application preferences</string>
+	<string name="set_app_prefs">Set Application Preferences</string>
 	<string name="set_security_question">Set Security Question</string>
 	<string name="security_question_description">In case of forgetting your password, you must answer this question in order to reset your password.</string>
 	<string name="application_password">Application Password</string>

@@ -20,10 +20,11 @@
 
 package ir.secure_msg.firstrun;
 
+import org.holoeverywhere.app.Activity;
+
 import ir.secure_msg.R;
 import ir.secure_msg.preferences.HandlePreferences;
 import ir.secure_msg.preferences.PreferencesInterface;
-import android.app.Activity;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
