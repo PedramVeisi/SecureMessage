@@ -52,27 +52,22 @@
         android:gravity="center"
         >
 
-        <Button
+        <org.holoeverywhere.widget.Button
             android:id="@+id/set_secq_send"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/ok"
-            android:background="@drawable/buttons_layout"
-            android:textColor="#FFFFFF"
-            >
-        </Button>
+            />
 
-        <Button
+        <org.holoeverywhere.widget.Button
             android:id="@+id/set_secq_cancel"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/cancel"
-            android:background="@drawable/buttons_layout"
-            android:textColor="#FFFFFF"
-            >
-        </Button>
+            />
+        
     </LinearLayout>
 
 </LinearLayout>
