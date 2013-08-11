@@ -21,6 +21,15 @@ public final class R {
         public static final int shrink_fade_out_from_bottom=0x7f040009;
     }
     public static final class attr {
+        /** Start attrs definition block
+         <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int action=0x7f0100c7;
         /**  Custom divider drawable to use for elements in the action bar. 
          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
@@ -206,6 +215,46 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
          */
         public static final int backgroundStacked=0x7f01004f;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int borderBottom=0x7f0100c8;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int borderLeft=0x7f0100c9;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int borderRight=0x7f0100ca;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int borderTop=0x7f0100cb;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
@@ -228,6 +277,22 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
          */
         public static final int bottomMedium=0x7f01006a;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int breadCrumbShortTitle=0x7f0100cc;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int breadCrumbTitle=0x7f0100cd;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
@@ -271,11 +336,23 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
          */
         public static final int centerMedium=0x7f010071;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int checkBoxPreferenceStyle=0x7f0100ce;
         /**  Specifies a layout for custom navigation. Overrides navigationMode. 
          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int customNavigationLayout=0x7f010050;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int data=0x7f0100cf;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
@@ -283,11 +360,39 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
+        public static final int datePreferenceStyle=0x7f0100d0;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
         public static final int dateTextAppearance=0x7f010073;
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>May be an integer value, such as "<code>100</code>".
+<p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>May be a floating point value, such as "<code>1.2</code>".
+         */
+        public static final int defaultValue=0x7f0100d1;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int dependency=0x7f0100d2;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int depends=0x7f0100d3;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int detailsElementBackground=0x7f010074;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int dialogIcon=0x7f0100d4;
         /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
@@ -301,7 +406,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
+        public static final int dialogLayout=0x7f0100d5;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int dialogMessage=0x7f0100d6;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int dialogPreferenceStyle=0x7f0100d7;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
         public static final int dialogTheme=0x7f010077;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int dialogTitle=0x7f0100d8;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -310,6 +439,14 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int disableChildrenWhenDisabled=0x7f010078;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int disableDependentsState=0x7f0100d9;
         /**  Options affecting how the action bar is displayed. 
          <p>Must be one or more (separated by '|') of the following constant values.</p>
 <table>
@@ -377,6 +514,18 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int dropdownListPreferredItemHeight=0x7f01003e;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int editTextPreferenceStyle=0x7f0100da;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int enabled=0x7f0100db;
         /** <p>Must be an integer value, such as "<code>100</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -385,6 +534,14 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int endYear=0x7f01007c;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int entries=0x7f0100dc;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int entryValues=0x7f0100dd;
         /**  The drawable to show in the button for expanding the activities overflow popup.
              <strong>Note:</strong> Clients would like to set this drawable
              as a clue about the action the chosen activity will perform. For
@@ -461,6 +618,14 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int forceShownState=0x7f010086;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int fragment=0x7f0100de;
         /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
@@ -561,6 +726,10 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int iconifiedByDefault=0x7f010060;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int id=0x7f0100df;
         /**  Specifies a style resource to use for an indeterminate progress spinner. 
          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
@@ -575,6 +744,18 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int initialActivityCount=0x7f01005e;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>auto</code></td><td>0</td><td></td></tr>
+<tr><td><code>no</code></td><td>-1</td><td></td></tr>
+<tr><td><code>yes</code></td><td>1</td><td></td></tr>
+</table>
+         */
+        public static final int is24HourView=0x7f0100e0;
         /**  Default background for each menu item. 
          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
@@ -608,10 +789,26 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int itemTextAppearance=0x7f010056;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int key=0x7f0100e1;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int layout=0x7f01008c;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int layout_removeBorders=0x7f0100e2;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
@@ -686,11 +883,35 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int logo=0x7f01004e;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int max=0x7f0100e3;
         /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
          */
         public static final int maxDate=0x7f010092;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int mimeType=0x7f0100e4;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int min=0x7f0100e5;
         /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
@@ -700,6 +921,14 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int multiChoiceItemLayout=0x7f010094;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int name=0x7f0100e6;
         /**  The type of navigation to use. 
          <p>Must be one of the following constant values.</p>
 <table>
@@ -713,6 +942,14 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 </table>
          */
         public static final int navigationMode=0x7f010049;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int negativeButtonText=0x7f0100e7;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
@@ -724,11 +961,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
+        public static final int numberPickerPreferenceStyle=0x7f0100e8;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
         public static final int numberPickerStyle=0x7f010097;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int numberPickerUpButtonStyle=0x7f010098;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int order=0x7f0100e9;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int orderingFromXml=0x7f0100ea;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -739,6 +996,14 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int panelMenuListWidth=0x7f010099;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int persistent=0x7f0100eb;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
@@ -751,6 +1016,46 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int popupWindowStyle=0x7f01009b;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int positiveButtonText=0x7f0100ec;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int preferenceCategoryStyle=0x7f0100ed;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int preferenceFragmentStyle=0x7f0100ee;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int preferenceFrameLayoutStyle=0x7f0100ef;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int preferenceInformationStyle=0x7f0100f0;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int preferenceLayoutChild=0x7f0100f1;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int preferencePanelStyle=0x7f0100f2;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int preferenceScreenStyle=0x7f0100f3;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int preferenceStyle=0x7f0100f4;
         /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be one of the following constant values.</p>
@@ -803,6 +1108,23 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int queryHint=0x7f010061;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int ringtonePreferenceStyle=0x7f0100f5;
+        /** <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>alarm</code></td><td>4</td><td></td></tr>
+<tr><td><code>all</code></td><td>7</td><td></td></tr>
+<tr><td><code>notification</code></td><td>2</td><td></td></tr>
+<tr><td><code>ringtone</code></td><td>1</td><td></td></tr>
+</table>
+         */
+        public static final int ringtoneType=0x7f0100f6;
         /**  SearchView AutoCompleteTextView style 
          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
@@ -867,7 +1189,23 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
+        public static final int seekBarDialogPreferenceStyle=0x7f0100f7;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int seekBarPreferenceStyle=0x7f0100f8;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
         public static final int segmentedButtonStyle=0x7f01009e;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int selectable=0x7f0100f9;
         /**  Background drawable for standalone items that need focus/pressed states. 
          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
@@ -907,6 +1245,30 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int selectionDividersDistance=0x7f0100a3;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int shouldDisableView=0x7f0100fa;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int showDefault=0x7f0100fb;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int showSilent=0x7f0100fc;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -972,6 +1334,20 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int startYear=0x7f0100ab;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>alarm</code></td><td>4</td><td></td></tr>
+<tr><td><code>music</code></td><td>3</td><td></td></tr>
+<tr><td><code>ring</code></td><td>2</td><td></td></tr>
+<tr><td><code>system</code></td><td>1</td><td></td></tr>
+<tr><td><code>voice</code></td><td>0</td><td></td></tr>
+</table>
+         */
+        public static final int streamType=0x7f0100fd;
         /**  Specifies subtitle text used for navigationMode="normal" 
          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
@@ -985,6 +1361,30 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int subtitleTextStyle=0x7f010001;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int summary=0x7f0100fe;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int summaryOff=0x7f0100ff;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int summaryOn=0x7f010100;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -1008,6 +1408,10 @@ containing a value of this type.
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
+        public static final int switchPreferenceStyle=0x7f010101;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
         public static final int switchStyle=0x7f0100ae;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
@@ -1017,6 +1421,38 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int switchTextAppearance=0x7f0100b0;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int switchTextOff=0x7f010102;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int switchTextOn=0x7f010103;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int targetClass=0x7f010104;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int targetPackage=0x7f010105;
         /**  Text color, typeface, size, and style for the text inside of a popup menu. 
          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
@@ -1117,6 +1553,10 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int timePickerStyle=0x7f0100b7;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int timePreferenceStyle=0x7f010106;
         /**  Specifies title text used for navigationMode="normal" 
          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
@@ -1160,6 +1600,19 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
          */
         public static final int unfocusedMonthDateColor=0x7f0100bc;
+        /** <p>May be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>May be an integer value, such as "<code>100</code>".
+<p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>May be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int value=0x7f010107;
         /**  Default vertical divider between menu items. 
          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
@@ -1185,6 +1638,10 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
          */
         public static final int weekSeparatorLineColor=0x7f0100c0;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int widgetLayout=0x7f010108;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -1334,6 +1791,18 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int windowSplitActionBar=0x7f010044;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int wrapSelectorWheel=0x7f010109;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int yesNoPreferenceStyle=0x7f01010a;
     }
     public static final class bool {
         public static final int abs__action_bar_embed_tabs=0x7f090000;
@@ -1356,6 +1825,7 @@ containing a value of this type.
          */
         public static final int abs__config_showMenuShortcutsWhenKeyboardPresent=0x7f090003;
         public static final int abs__split_action_bar_is_narrow=0x7f090001;
+        public static final int preferences_prefer_dual_pane=0x7f090006;
     }
     public static final class color {
         public static final int abs__background_holo_dark=0x7f0a0000;
@@ -1534,6 +2004,21 @@ containing a value of this type.
         public static final int fastscroll_overlay_size=0x7f0b0014;
         public static final int fastscroll_thumb_height=0x7f0b0013;
         public static final int fastscroll_thumb_width=0x7f0b0012;
+        public static final int preference_breadcrumb_paddingLeft=0x7f0b0028;
+        public static final int preference_breadcrumb_paddingRight=0x7f0b0029;
+        public static final int preference_child_padding_side=0x7f0b001f;
+        public static final int preference_fragment_padding_bottom=0x7f0b0026;
+        public static final int preference_fragment_padding_side=0x7f0b0027;
+        public static final int preference_icon_minWidth=0x7f0b0020;
+        public static final int preference_item_padding_inner=0x7f0b001e;
+        public static final int preference_item_padding_side=0x7f0b001d;
+        public static final int preference_screen_bottom_margin=0x7f0b0024;
+        public static final int preference_screen_header_padding_side=0x7f0b001c;
+        public static final int preference_screen_header_vertical_padding=0x7f0b001b;
+        public static final int preference_screen_side_margin=0x7f0b0021;
+        public static final int preference_screen_side_margin_negative=0x7f0b0022;
+        public static final int preference_screen_top_margin=0x7f0b0023;
+        public static final int preference_widget_width=0x7f0b0025;
     }
     public static final class drawable {
         public static final int about_us=0x7f020000;
@@ -1996,225 +2481,248 @@ containing a value of this type.
         public static final int view_inbox=0x7f0201c9;
     }
     public static final class id {
-        public static final int Delete=0x7f0800d9;
-        public static final int Open=0x7f0800da;
-        public static final int Reply=0x7f0800d8;
-        public static final int abs__action_bar=0x7f080045;
-        public static final int abs__action_bar_container=0x7f080044;
-        public static final int abs__action_bar_subtitle=0x7f080036;
-        public static final int abs__action_bar_title=0x7f080035;
-        public static final int abs__action_context_bar=0x7f080046;
+        public static final int Delete=0x7f0800f0;
+        public static final int Open=0x7f0800f1;
+        public static final int Reply=0x7f0800ef;
+        public static final int abs__action_bar=0x7f080050;
+        public static final int abs__action_bar_container=0x7f08004f;
+        public static final int abs__action_bar_subtitle=0x7f080041;
+        public static final int abs__action_bar_title=0x7f080040;
+        public static final int abs__action_context_bar=0x7f080051;
         public static final int abs__action_menu_divider=0x7f08000c;
         public static final int abs__action_menu_presenter=0x7f08000d;
-        public static final int abs__action_mode_bar=0x7f08004a;
-        public static final int abs__action_mode_bar_stub=0x7f080049;
-        public static final int abs__action_mode_close_button=0x7f080039;
-        public static final int abs__activity_chooser_view_content=0x7f08003a;
-        public static final int abs__checkbox=0x7f080041;
-        public static final int abs__content=0x7f080047;
-        public static final int abs__default_activity_button=0x7f08003d;
-        public static final int abs__expand_activities_button=0x7f08003b;
+        public static final int abs__action_mode_bar=0x7f080055;
+        public static final int abs__action_mode_bar_stub=0x7f080054;
+        public static final int abs__action_mode_close_button=0x7f080044;
+        public static final int abs__activity_chooser_view_content=0x7f080045;
+        public static final int abs__checkbox=0x7f08004c;
+        public static final int abs__content=0x7f080052;
+        public static final int abs__default_activity_button=0x7f080048;
+        public static final int abs__expand_activities_button=0x7f080046;
         public static final int abs__home=0x7f08000a;
-        public static final int abs__icon=0x7f08003f;
-        public static final int abs__image=0x7f08003c;
-        public static final int abs__imageButton=0x7f080037;
-        public static final int abs__list_item=0x7f08003e;
+        public static final int abs__icon=0x7f08004a;
+        public static final int abs__image=0x7f080047;
+        public static final int abs__imageButton=0x7f080042;
+        public static final int abs__list_item=0x7f080049;
         public static final int abs__progress_circular=0x7f08000e;
         public static final int abs__progress_horizontal=0x7f08000f;
-        public static final int abs__radio=0x7f080042;
-        public static final int abs__search_badge=0x7f08004d;
-        public static final int abs__search_bar=0x7f08004c;
-        public static final int abs__search_button=0x7f08004e;
-        public static final int abs__search_close_btn=0x7f080053;
-        public static final int abs__search_edit_frame=0x7f08004f;
-        public static final int abs__search_go_btn=0x7f080055;
-        public static final int abs__search_mag_icon=0x7f080050;
-        public static final int abs__search_plate=0x7f080051;
-        public static final int abs__search_src_text=0x7f080052;
-        public static final int abs__search_voice_btn=0x7f080056;
-        public static final int abs__shortcut=0x7f080043;
-        public static final int abs__split_action_bar=0x7f080048;
-        public static final int abs__submit_area=0x7f080054;
-        public static final int abs__textButton=0x7f080038;
-        public static final int abs__title=0x7f080040;
+        public static final int abs__radio=0x7f08004d;
+        public static final int abs__search_badge=0x7f080058;
+        public static final int abs__search_bar=0x7f080057;
+        public static final int abs__search_button=0x7f080059;
+        public static final int abs__search_close_btn=0x7f08005e;
+        public static final int abs__search_edit_frame=0x7f08005a;
+        public static final int abs__search_go_btn=0x7f080060;
+        public static final int abs__search_mag_icon=0x7f08005b;
+        public static final int abs__search_plate=0x7f08005c;
+        public static final int abs__search_src_text=0x7f08005d;
+        public static final int abs__search_voice_btn=0x7f080061;
+        public static final int abs__shortcut=0x7f08004e;
+        public static final int abs__split_action_bar=0x7f080053;
+        public static final int abs__submit_area=0x7f08005f;
+        public static final int abs__textButton=0x7f080043;
+        public static final int abs__title=0x7f08004b;
         public static final int abs__up=0x7f08000b;
-        public static final int advanced_mode_radiob=0x7f080076;
-        public static final int advanced_mode_text=0x7f080077;
-        public static final int alertTitle=0x7f080064;
-        public static final int amPm=0x7f0800d2;
-        public static final int app_description_text_view=0x7f080034;
-        public static final int app_mode_done=0x7f080078;
-        public static final int app_motto_text_view=0x7f080033;
-        public static final int app_name_text_view=0x7f080032;
-        public static final int ask_security_question_text=0x7f0800a0;
+        public static final int advanced_mode_radiob=0x7f080081;
+        public static final int advanced_mode_text=0x7f080082;
+        public static final int alarm=0x7f080035;
+        public static final int alertTitle=0x7f08006f;
+        public static final int all=0x7f080036;
+        public static final int amPm=0x7f0800e9;
+        public static final int app_description_text_view=0x7f08003f;
+        public static final int app_mode_done=0x7f080083;
+        public static final int app_motto_text_view=0x7f08003e;
+        public static final int app_name_text_view=0x7f08003d;
+        public static final int ask_security_question_text=0x7f0800ac;
         public static final int atThumb=0x7f080010;
+        public static final int auto=0x7f080032;
+        public static final int back_button=0x7f0800d3;
         public static final int bottom=0x7f080012;
-        public static final int browse_button=0x7f080058;
-        public static final int button1=0x7f08006f;
-        public static final int button2=0x7f08006d;
-        public static final int button3=0x7f08006e;
-        public static final int buttonPanel=0x7f08006b;
-        public static final int buttonPanelTopDivivder=0x7f08006c;
-        public static final int button_always=0x7f0800c0;
-        public static final int button_bar=0x7f0800bf;
-        public static final int button_once=0x7f0800c1;
-        public static final int buttons_layout=0x7f080083;
-        public static final int calendar_view=0x7f080098;
-        public static final int cancel_button=0x7f08009d;
+        public static final int browse_button=0x7f080063;
+        public static final int button1=0x7f08007a;
+        public static final int button2=0x7f080078;
+        public static final int button3=0x7f080079;
+        public static final int buttonPanel=0x7f080076;
+        public static final int buttonPanelTopDivivder=0x7f080077;
+        public static final int button_always=0x7f0800d7;
+        public static final int button_bar=0x7f0800d2;
+        public static final int button_once=0x7f0800d8;
+        public static final int buttons_layout=0x7f08008f;
+        public static final int calendar_view=0x7f0800a4;
+        public static final int cancel_button=0x7f0800a9;
         public static final int center=0x7f080013;
         public static final int center_horizontal=0x7f080014;
         public static final int center_vertical=0x7f080015;
-        public static final int checkbox=0x7f0800b9;
-        public static final int chng_pass_cancel=0x7f080085;
-        public static final int chng_pass_send=0x7f080084;
-        public static final int chng_sec_question_cancel=0x7f08008d;
-        public static final int chng_sec_question_send=0x7f08008c;
-        public static final int clear_encrypted_text_button=0x7f08005c;
+        public static final int checkbox=0x7f0800c6;
+        public static final int chng_pass_cancel=0x7f080091;
+        public static final int chng_pass_send=0x7f080090;
+        public static final int chng_sec_question_cancel=0x7f080099;
+        public static final int chng_sec_question_send=0x7f080098;
+        public static final int clear_encrypted_text_button=0x7f080067;
         public static final int clip=0x7f080016;
         public static final int clip_horizontal=0x7f080017;
         public static final int clip_vertical=0x7f080018;
-        public static final int contact_name=0x7f0800ca;
-        public static final int contact_number=0x7f0800cc;
-        public static final int contact_phone_type=0x7f0800cb;
-        public static final int contentPanel=0x7f080066;
-        public static final int current_pairs_text=0x7f0800a5;
-        public static final int current_pass_field=0x7f08007d;
-        public static final int current_pass_text=0x7f08007c;
-        public static final int custom=0x7f08006a;
-        public static final int customPanel=0x7f080069;
+        public static final int contact_name=0x7f0800e1;
+        public static final int contact_number=0x7f0800e3;
+        public static final int contact_phone_type=0x7f0800e2;
+        public static final int contentPanel=0x7f080071;
+        public static final int current_pairs_text=0x7f0800b2;
+        public static final int current_pass_field=0x7f080089;
+        public static final int current_pass_text=0x7f080088;
+        public static final int custom=0x7f080075;
+        public static final int customPanel=0x7f080074;
         public static final int dark=0x7f080021;
-        public static final int datePicker=0x7f080093;
-        public static final int day=0x7f080096;
-        public static final int day_names=0x7f08007a;
+        public static final int datePicker=0x7f08009f;
+        public static final int day=0x7f0800a2;
+        public static final int day_names=0x7f080086;
         public static final int decrement=0x7f08002d;
         public static final int dialog=0x7f080026;
         public static final int disableHome=0x7f080009;
-        public static final int divider=0x7f0800d0;
-        public static final int donation_button=0x7f0800b8;
+        public static final int divider=0x7f0800e7;
+        public static final int donation_button=0x7f0800c5;
         public static final int dropdown=0x7f080027;
         public static final int edit=0x7f080028;
-        public static final int edit_query=0x7f08004b;
+        public static final int edit_query=0x7f080056;
+        public static final int edittext_container=0x7f0800cc;
         public static final int empty=0x7f08002e;
-        public static final int encrypt_text_button=0x7f08005d;
+        public static final int encrypt_text_button=0x7f080068;
         public static final int end=0x7f080019;
-        public static final int error_text=0x7f080082;
-        public static final int expanded_menu=0x7f080099;
-        public static final int export_private=0x7f0800d6;
-        public static final int export_public=0x7f0800d5;
-        public static final int file_picker_image=0x7f08009a;
-        public static final int file_picker_text=0x7f08009b;
+        public static final int error_text=0x7f08008e;
+        public static final int expanded_menu=0x7f0800a5;
+        public static final int export_private=0x7f0800ed;
+        public static final int export_public=0x7f0800ec;
+        public static final int file_picker_image=0x7f0800a6;
+        public static final int file_picker_text=0x7f0800a7;
         public static final int fill=0x7f08001a;
         public static final int fill_horizontal=0x7f08001b;
         public static final int fill_vertical=0x7f08001c;
-        public static final int first_run_web_view=0x7f08009c;
+        public static final int first_run_web_view=0x7f0800a8;
         public static final int floating=0x7f080011;
         public static final int fontLoaderFont=0x7f08002f;
         public static final int fontLoaderFontFamily=0x7f080031;
         public static final int fontLoaderFontStyle=0x7f080030;
-        public static final int forget_password_textview=0x7f080091;
-        public static final int generate_keys_button=0x7f0800a6;
+        public static final int forget_password_textview=0x7f08009d;
+        public static final int generate_keys_button=0x7f0800b3;
+        public static final int headers=0x7f0800ce;
         public static final int homeAsUp=0x7f080006;
-        public static final int home_gen_keys_button=0x7f0800b3;
-        public static final int home_gen_keys_layout=0x7f0800b2;
-        public static final int home_gen_keys_text=0x7f0800b4;
-        public static final int hour=0x7f0800cf;
-        public static final int icon=0x7f080063;
+        public static final int home_gen_keys_button=0x7f0800c0;
+        public static final int home_gen_keys_layout=0x7f0800bf;
+        public static final int home_gen_keys_text=0x7f0800c1;
+        public static final int hour=0x7f0800e6;
+        public static final int icon=0x7f08006e;
         public static final int increment=0x7f08002c;
-        public static final int internalEmpty=0x7f0800a9;
+        public static final int internalEmpty=0x7f0800b6;
         public static final int invalid=0x7f080022;
         public static final int left=0x7f08001d;
         public static final int leftSpacer=0x7f080029;
+        public static final int left_icon=0x7f0800b1;
         public static final int light=0x7f080023;
-        public static final int linearLayout1=0x7f08005b;
-        public static final int list=0x7f08007b;
-        public static final int listContainer=0x7f0800a8;
+        public static final int linearLayout1=0x7f080066;
+        public static final int list=0x7f080087;
+        public static final int listContainer=0x7f0800b5;
         public static final int listMode=0x7f080002;
-        public static final int message=0x7f080068;
-        public static final int minute=0x7f0800d1;
+        public static final int list_footer=0x7f0800cf;
+        public static final int message=0x7f080073;
+        public static final int minute=0x7f0800e8;
         public static final int mixed=0x7f080024;
-        public static final int mode_radio_group=0x7f080073;
-        public static final int month=0x7f080095;
-        public static final int month_name=0x7f080079;
-        public static final int new_pass_field=0x7f08007f;
-        public static final int new_pass_text=0x7f08007e;
-        public static final int new_sec_answer_field=0x7f08008b;
-        public static final int new_sec_answer_text=0x7f08008a;
-        public static final int new_sec_question=0x7f080088;
-        public static final int new_sec_question_field=0x7f080089;
-        public static final int next_button=0x7f08009e;
+        public static final int mode_radio_group=0x7f08007e;
+        public static final int month=0x7f0800a1;
+        public static final int month_name=0x7f080085;
+        public static final int music=0x7f080039;
+        public static final int new_pass_field=0x7f08008b;
+        public static final int new_pass_text=0x7f08008a;
+        public static final int new_sec_answer_field=0x7f080097;
+        public static final int new_sec_answer_text=0x7f080096;
+        public static final int new_sec_question=0x7f080094;
+        public static final int new_sec_question_field=0x7f080095;
+        public static final int next_button=0x7f0800aa;
+        public static final int no=0x7f080033;
         public static final int normal=0x7f080001;
-        public static final int numberpicker_input=0x7f0800bd;
-        public static final int option_menu_about_us=0x7f0800d4;
-        public static final int option_menu_faq=0x7f0800d3;
-        public static final int parentPanel=0x7f08005f;
-        public static final int pass_cancel=0x7f080090;
-        public static final int pass_field=0x7f080087;
-        public static final int pass_send=0x7f08008f;
-        public static final int pass_text=0x7f080086;
-        public static final int password_request=0x7f08008e;
-        public static final int pickers=0x7f080094;
-        public static final int plain_text_field=0x7f08005a;
+        public static final int notification=0x7f080037;
+        public static final int numberpicker_input=0x7f0800c9;
+        public static final int option_menu_about_us=0x7f0800eb;
+        public static final int option_menu_faq=0x7f0800ea;
+        public static final int parentPanel=0x7f08006a;
+        public static final int pass_cancel=0x7f08009c;
+        public static final int pass_field=0x7f080093;
+        public static final int pass_send=0x7f08009b;
+        public static final int pass_text=0x7f080092;
+        public static final int password_request=0x7f08009a;
+        public static final int pickers=0x7f0800a0;
+        public static final int plain_text_field=0x7f080065;
         public static final int preference=0x7f080025;
-        public static final int progress=0x7f080070;
-        public static final int progressContainer=0x7f0800a7;
-        public static final int progress_number=0x7f080072;
-        public static final int progress_percent=0x7f080071;
-        public static final int radio=0x7f0800bc;
-        public static final int remove_item=0x7f0800d7;
-        public static final int resolver_grid=0x7f0800be;
-        public static final int retype_pass_field=0x7f080081;
-        public static final int retype_pass_text=0x7f080080;
+        public static final int prefs=0x7f0800d1;
+        public static final int prefs_frame=0x7f0800d0;
+        public static final int progress=0x7f08007b;
+        public static final int progressContainer=0x7f0800b4;
+        public static final int progress_number=0x7f08007d;
+        public static final int progress_percent=0x7f08007c;
+        public static final int radio=0x7f0800c8;
+        public static final int remove_item=0x7f0800ee;
+        public static final int resolver_grid=0x7f0800d6;
+        public static final int retype_pass_field=0x7f08008d;
+        public static final int retype_pass_text=0x7f08008c;
         public static final int right=0x7f08001e;
         public static final int rightSpacer=0x7f08002a;
-        public static final int scrollView=0x7f080067;
-        public static final int sec_answer_cancel=0x7f0800a3;
-        public static final int sec_answer_field=0x7f0800a1;
-        public static final int sec_answer_send=0x7f0800a2;
-        public static final int sec_answer_text=0x7f0800c7;
-        public static final int sec_question_field=0x7f0800c6;
-        public static final int sec_question_text=0x7f0800c5;
-        public static final int select_dialog_listview=0x7f0800c2;
-        public static final int selected_file_text=0x7f080059;
-        public static final int sen_sms_layout=0x7f0800ac;
-        public static final int send_sms_button=0x7f08005e;
-        public static final int send_sms_text=0x7f0800ad;
-        public static final int set_pass_cancel=0x7f0800c4;
-        public static final int set_pass_send=0x7f0800c3;
-        public static final int set_secq_cancel=0x7f0800c9;
-        public static final int set_secq_send=0x7f0800c8;
-        public static final int settings_button=0x7f0800b6;
-        public static final int settings_layout=0x7f0800b5;
-        public static final int settings_text=0x7f0800b7;
-        public static final int shortcut=0x7f0800bb;
+        public static final int ring=0x7f08003a;
+        public static final int ringtone=0x7f080038;
+        public static final int scrollView=0x7f080072;
+        public static final int sec_answer_cancel=0x7f0800af;
+        public static final int sec_answer_field=0x7f0800ad;
+        public static final int sec_answer_send=0x7f0800ae;
+        public static final int sec_answer_text=0x7f0800de;
+        public static final int sec_question_field=0x7f0800dd;
+        public static final int sec_question_text=0x7f0800dc;
+        public static final int seekbar=0x7f0800cd;
+        public static final int select_dialog_listview=0x7f0800d9;
+        public static final int selected_file_text=0x7f080064;
+        public static final int sen_sms_layout=0x7f0800b9;
+        public static final int send_sms_button=0x7f080069;
+        public static final int send_sms_text=0x7f0800ba;
+        public static final int set_pass_cancel=0x7f0800db;
+        public static final int set_pass_send=0x7f0800da;
+        public static final int set_secq_cancel=0x7f0800e0;
+        public static final int set_secq_send=0x7f0800df;
+        public static final int settings_button=0x7f0800c3;
+        public static final int settings_layout=0x7f0800c2;
+        public static final int settings_text=0x7f0800c4;
+        public static final int shortcut=0x7f0800c7;
         public static final int showCustom=0x7f080008;
         public static final int showHome=0x7f080005;
         public static final int showTitle=0x7f080007;
-        public static final int simple_mode_radiob=0x7f080074;
-        public static final int simple_mode_text=0x7f080075;
-        public static final int sms_receiver_autocomplete_textview=0x7f080057;
+        public static final int simple_mode_radiob=0x7f08007f;
+        public static final int simple_mode_text=0x7f080080;
+        public static final int skip_button=0x7f0800d4;
+        public static final int sms_receiver_autocomplete_textview=0x7f080062;
         public static final int start=0x7f08001f;
-        public static final int start_app_button=0x7f08009f;
+        public static final int start_app_button=0x7f0800ab;
+        public static final int summary=0x7f0800ca;
+        public static final int switchWidget=0x7f0800d5;
+        public static final int system=0x7f08003b;
         public static final int tabMode=0x7f080003;
-        public static final int tabSwipePager=0x7f0800cd;
-        public static final int tableLayout1=0x7f0800aa;
-        public static final int tableRow1=0x7f0800ab;
-        public static final int tableRow2=0x7f0800b1;
-        public static final int timePicker=0x7f0800ce;
-        public static final int title=0x7f0800ba;
-        public static final int titleDivider=0x7f080065;
-        public static final int titleDividerTop=0x7f080061;
-        public static final int title_template=0x7f080062;
+        public static final int tabSwipePager=0x7f0800e4;
+        public static final int tableLayout1=0x7f0800b7;
+        public static final int tableRow1=0x7f0800b8;
+        public static final int tableRow2=0x7f0800be;
+        public static final int timePicker=0x7f0800e5;
+        public static final int title=0x7f080084;
+        public static final int titleDivider=0x7f080070;
+        public static final int titleDividerTop=0x7f08006c;
+        public static final int title_template=0x7f08006d;
         public static final int top=0x7f080020;
-        public static final int topPanel=0x7f080060;
+        public static final int topPanel=0x7f08006b;
         public static final int typeface=0x7f08002b;
         public static final int useLogo=0x7f080004;
-        public static final int view_inbox_button=0x7f0800af;
-        public static final int view_inbox_layout=0x7f0800ae;
-        public static final int view_inbox_text=0x7f0800b0;
+        public static final int view_inbox_button=0x7f0800bc;
+        public static final int view_inbox_layout=0x7f0800bb;
+        public static final int view_inbox_text=0x7f0800bd;
+        public static final int voice=0x7f08003c;
+        public static final int widget_frame=0x7f0800cb;
         public static final int wrap_content=0x7f080000;
-        public static final int wrong_password=0x7f080092;
-        public static final int wrong_security_answer_text=0x7f0800a4;
-        public static final int year=0x7f080097;
+        public static final int wrong_password=0x7f08009e;
+        public static final int wrong_security_answer_text=0x7f0800b0;
+        public static final int year=0x7f0800a3;
+        public static final int yes=0x7f080034;
     }
     public static final class integer {
         public static final int abs__max_action_buttons=0x7f0c0000;
@@ -2224,6 +2732,10 @@ containing a value of this type.
         public static final int config_maxResolverActivityColumns=0x7f0c0006;
         public static final int config_mediumAnimTime=0x7f0c0004;
         public static final int config_shortAnimTime=0x7f0c0003;
+        public static final int preference_fragment_scrollbarStyle=0x7f0c0008;
+        public static final int preference_screen_header_scrollbarStyle=0x7f0c0007;
+        public static final int preferences_left_pane_weight=0x7f0c0009;
+        public static final int preferences_right_pane_weight=0x7f0c000a;
     }
     public static final class interpolator {
         public static final int accelerate_cubic=0x7f050000;
@@ -2267,58 +2779,76 @@ containing a value of this type.
         public static final int alert_dialog_holo=0x7f030017;
         public static final int alert_dialog_progress_holo=0x7f030018;
         public static final int app_mode=0x7f030019;
-        public static final int calendar_view=0x7f03001a;
-        public static final int change_password=0x7f03001b;
-        public static final int change_security_question=0x7f03001c;
-        public static final int check_password=0x7f03001d;
-        public static final int date_picker_dialog=0x7f03001e;
-        public static final int date_picker_holo=0x7f03001f;
-        public static final int expandable_list_content=0x7f030020;
-        public static final int expanded_menu_layout=0x7f030021;
-        public static final int file_picker_empty_view=0x7f030022;
-        public static final int file_picker_list_item=0x7f030023;
-        public static final int first_run=0x7f030024;
-        public static final int first_time_prefs=0x7f030025;
-        public static final int forget_password=0x7f030026;
-        public static final int generate_key=0x7f030027;
-        public static final int grid_content=0x7f030028;
-        public static final int home_page_advanced=0x7f030029;
-        public static final int home_page_simple=0x7f03002a;
-        public static final int list_content=0x7f03002b;
-        public static final int list_menu_item_checkbox=0x7f03002c;
-        public static final int list_menu_item_icon=0x7f03002d;
-        public static final int list_menu_item_layout=0x7f03002e;
-        public static final int list_menu_item_radio=0x7f03002f;
-        public static final int number_picker_with_selector_wheel=0x7f030030;
-        public static final int popup_menu_item_layout=0x7f030031;
-        public static final int progress_dialog_holo=0x7f030032;
-        public static final int resolve_list_item=0x7f030033;
-        public static final int resolver_grid=0x7f030034;
-        public static final int select_dialog_holo=0x7f030035;
-        public static final int select_dialog_item_holo=0x7f030036;
-        public static final int select_dialog_multichoice_holo=0x7f030037;
-        public static final int select_dialog_singlechoice_holo=0x7f030038;
-        public static final int set_password=0x7f030039;
-        public static final int set_security_question=0x7f03003a;
-        public static final int sherlock_spinner_dropdown_item=0x7f03003b;
-        public static final int sherlock_spinner_item=0x7f03003c;
-        public static final int simple_dropdown_hint=0x7f03003d;
-        public static final int simple_dropdown_item_1line=0x7f03003e;
-        public static final int simple_list_item_1=0x7f03003f;
-        public static final int simple_list_item_2=0x7f030040;
-        public static final int simple_list_item_2_single_choice=0x7f030041;
-        public static final int simple_list_item_activated_1=0x7f030042;
-        public static final int simple_list_item_activated_2=0x7f030043;
-        public static final int simple_list_item_checked=0x7f030044;
-        public static final int simple_list_item_multiple_choice=0x7f030045;
-        public static final int simple_list_item_single_choice=0x7f030046;
-        public static final int simple_mode_compose=0x7f030047;
-        public static final int simple_spinner_dropdown_item=0x7f030048;
-        public static final int simple_spinner_item=0x7f030049;
-        public static final int sms_receiver_list_item=0x7f03004a;
-        public static final int tab_swipe=0x7f03004b;
-        public static final int time_picker_dialog=0x7f03004c;
-        public static final int time_picker_holo=0x7f03004d;
+        public static final int breadcrumbs_in_fragment=0x7f03001a;
+        public static final int calendar_view=0x7f03001b;
+        public static final int change_password=0x7f03001c;
+        public static final int change_security_question=0x7f03001d;
+        public static final int check_password=0x7f03001e;
+        public static final int date_picker_dialog=0x7f03001f;
+        public static final int date_picker_holo=0x7f030020;
+        public static final int expandable_list_content=0x7f030021;
+        public static final int expanded_menu_layout=0x7f030022;
+        public static final int file_picker_empty_view=0x7f030023;
+        public static final int file_picker_list_item=0x7f030024;
+        public static final int first_run=0x7f030025;
+        public static final int first_time_prefs=0x7f030026;
+        public static final int forget_password=0x7f030027;
+        public static final int fragment_bread_crumb_item=0x7f030028;
+        public static final int fragment_bread_crumbs=0x7f030029;
+        public static final int generate_key=0x7f03002a;
+        public static final int grid_content=0x7f03002b;
+        public static final int home_page_advanced=0x7f03002c;
+        public static final int home_page_simple=0x7f03002d;
+        public static final int list_content=0x7f03002e;
+        public static final int list_menu_item_checkbox=0x7f03002f;
+        public static final int list_menu_item_icon=0x7f030030;
+        public static final int list_menu_item_layout=0x7f030031;
+        public static final int list_menu_item_radio=0x7f030032;
+        public static final int number_picker_with_selector_wheel=0x7f030033;
+        public static final int popup_menu_item_layout=0x7f030034;
+        public static final int preference_category_holo=0x7f030035;
+        public static final int preference_child_holo=0x7f030036;
+        public static final int preference_dialog_edittext=0x7f030037;
+        public static final int preference_dialog_numberpicker=0x7f030038;
+        public static final int preference_dialog_seekbar=0x7f030039;
+        public static final int preference_dialog_seekbar_widget=0x7f03003a;
+        public static final int preference_header_item=0x7f03003b;
+        public static final int preference_holo=0x7f03003c;
+        public static final int preference_information_holo=0x7f03003d;
+        public static final int preference_list_content=0x7f03003e;
+        public static final int preference_list_content_single=0x7f03003f;
+        public static final int preference_list_fragment=0x7f030040;
+        public static final int preference_widget_checkbox=0x7f030041;
+        public static final int preference_widget_seekbar=0x7f030042;
+        public static final int preference_widget_switch=0x7f030043;
+        public static final int progress_dialog_holo=0x7f030044;
+        public static final int resolve_list_item=0x7f030045;
+        public static final int resolver_grid=0x7f030046;
+        public static final int select_dialog_holo=0x7f030047;
+        public static final int select_dialog_item_holo=0x7f030048;
+        public static final int select_dialog_multichoice_holo=0x7f030049;
+        public static final int select_dialog_singlechoice_holo=0x7f03004a;
+        public static final int set_password=0x7f03004b;
+        public static final int set_security_question=0x7f03004c;
+        public static final int sherlock_spinner_dropdown_item=0x7f03004d;
+        public static final int sherlock_spinner_item=0x7f03004e;
+        public static final int simple_dropdown_hint=0x7f03004f;
+        public static final int simple_dropdown_item_1line=0x7f030050;
+        public static final int simple_list_item_1=0x7f030051;
+        public static final int simple_list_item_2=0x7f030052;
+        public static final int simple_list_item_2_single_choice=0x7f030053;
+        public static final int simple_list_item_activated_1=0x7f030054;
+        public static final int simple_list_item_activated_2=0x7f030055;
+        public static final int simple_list_item_checked=0x7f030056;
+        public static final int simple_list_item_multiple_choice=0x7f030057;
+        public static final int simple_list_item_single_choice=0x7f030058;
+        public static final int simple_mode_compose=0x7f030059;
+        public static final int simple_spinner_dropdown_item=0x7f03005a;
+        public static final int simple_spinner_item=0x7f03005b;
+        public static final int sms_receiver_list_item=0x7f03005c;
+        public static final int tab_swipe=0x7f03005d;
+        public static final int time_picker_dialog=0x7f03005e;
+        public static final int time_picker_holo=0x7f03005f;
     }
     public static final class menu {
         public static final int homepage_option_menu=0x7f0f0000;
@@ -2332,7 +2862,7 @@ containing a value of this type.
         public static final int roboto_regular=0x7f070003;
     }
     public static final class string {
-        public static final int about_us=0x7f0d0045;
+        public static final int about_us=0x7f0d0048;
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
          */
         public static final int abs__action_bar_home_description=0x7f0d0000;
@@ -2374,36 +2904,37 @@ containing a value of this type.
         public static final int abs__shareactionprovider_share_with_application=0x7f0d0007;
         public static final int activity_resolver_use_always=0x7f0d000d;
         public static final int activity_resolver_use_once=0x7f0d000e;
-        public static final int advanced_mode=0x7f0d0079;
-        public static final int advanced_mode_description=0x7f0d0077;
-        public static final int already_exists=0x7f0d004f;
-        public static final int app_description_text=0x7f0d006b;
-        public static final int app_license_description=0x7f0d006c;
-        public static final int app_mode=0x7f0d0076;
-        public static final int app_motto=0x7f0d0068;
-        public static final int app_name=0x7f0d0030;
-        public static final int app_pass_description=0x7f0d006f;
-        public static final int app_password=0x7f0d007b;
-        public static final int app_url=0x7f0d002e;
-        public static final int application_password=0x7f0d0074;
-        public static final int are_you_sure=0x7f0d0057;
-        public static final int browse=0x7f0d003c;
-        public static final int cancel=0x7f0d0033;
+        public static final int advanced_mode=0x7f0d007c;
+        public static final int advanced_mode_description=0x7f0d007a;
+        public static final int already_exists=0x7f0d0052;
+        public static final int app_description_text=0x7f0d006e;
+        public static final int app_license_description=0x7f0d006f;
+        public static final int app_mode=0x7f0d0079;
+        public static final int app_motto=0x7f0d006b;
+        public static final int app_name=0x7f0d0033;
+        public static final int app_pass_description=0x7f0d0072;
+        public static final int app_password=0x7f0d007e;
+        public static final int app_url=0x7f0d0031;
+        public static final int application_password=0x7f0d0077;
+        public static final int are_you_sure=0x7f0d005a;
+        public static final int back_button_label=0x7f0d002e;
+        public static final int browse=0x7f0d003f;
+        public static final int cancel=0x7f0d0036;
         public static final int candidates_style=0x7f0d000f;
         public static final int capital_off=0x7f0d0010;
         public static final int capital_on=0x7f0d0011;
-        public static final int change=0x7f0d0092;
-        public static final int change_app_password=0x7f0d0047;
-        public static final int change_security_question=0x7f0d0048;
+        public static final int change=0x7f0d0095;
+        public static final int change_app_password=0x7f0d004a;
+        public static final int change_security_question=0x7f0d004b;
         public static final int chooseActivity=0x7f0d0012;
-        public static final int cipher_length=0x7f0d0064;
-        public static final int clear=0x7f0d004e;
-        public static final int clear_text_field_description=0x7f0d005b;
-        public static final int confirm_new_password=0x7f0d004d;
-        public static final int confirm_password=0x7f0d003a;
-        public static final int creating_keypair_wait=0x7f0d0051;
-        public static final int curren_pairs=0x7f0d003f;
-        public static final int current_password_is_not_correct=0x7f0d0062;
+        public static final int cipher_length=0x7f0d0067;
+        public static final int clear=0x7f0d0051;
+        public static final int clear_text_field_description=0x7f0d005e;
+        public static final int confirm_new_password=0x7f0d0050;
+        public static final int confirm_password=0x7f0d003d;
+        public static final int creating_keypair_wait=0x7f0d0054;
+        public static final int curren_pairs=0x7f0d0042;
+        public static final int current_password_is_not_correct=0x7f0d0065;
         public static final int date_picker_decrement_day_button=0x7f0d0013;
         public static final int date_picker_decrement_month_button=0x7f0d0014;
         public static final int date_picker_decrement_year_button=0x7f0d0015;
@@ -2413,83 +2944,85 @@ containing a value of this type.
         public static final int date_picker_increment_year_button=0x7f0d0019;
         public static final int date_time_done=0x7f0d001a;
         public static final int date_time_set=0x7f0d001b;
-        public static final int decrypt=0x7f0d0088;
-        public static final int deletion_failed=0x7f0d0055;
-        public static final int donation=0x7f0d005d;
-        public static final int done=0x7f0d003d;
-        public static final int encrypt_text=0x7f0d004b;
-        public static final int enter_keypair_name=0x7f0d0054;
-        public static final int enter_name_for_exported_key=0x7f0d0067;
-        public static final int enter_sec_a=0x7f0d0082;
-        public static final int enter_sec_q=0x7f0d0081;
-        public static final int enter_your_text_=0x7f0d007e;
-        public static final int error=0x7f0d0052;
-        public static final int export_name=0x7f0d0066;
-        public static final int export_private_key=0x7f0d0042;
-        public static final int export_public_key=0x7f0d0041;
-        public static final int exported_to=0x7f0d008b;
-        public static final int failure=0x7f0d008e;
-        public static final int faq=0x7f0d0044;
-        public static final int fill_text_field=0x7f0d0091;
-        public static final int forget_password_text=0x7f0d0069;
-        public static final int generate_key_button=0x7f0d003e;
-        public static final int hello=0x7f0d002f;
-        public static final int invalid_key=0x7f0d008f;
-        public static final int invalid_public_key=0x7f0d0065;
-        public static final int item_removed=0x7f0d0056;
-        public static final int keypair_name=0x7f0d0053;
+        public static final int decrypt=0x7f0d008b;
+        public static final int deletion_failed=0x7f0d0058;
+        public static final int donation=0x7f0d0060;
+        public static final int done=0x7f0d0040;
+        public static final int encrypt_text=0x7f0d004e;
+        public static final int enter_keypair_name=0x7f0d0057;
+        public static final int enter_name_for_exported_key=0x7f0d006a;
+        public static final int enter_sec_a=0x7f0d0085;
+        public static final int enter_sec_q=0x7f0d0084;
+        public static final int enter_your_text_=0x7f0d0081;
+        public static final int error=0x7f0d0055;
+        public static final int export_name=0x7f0d0069;
+        public static final int export_private_key=0x7f0d0045;
+        public static final int export_public_key=0x7f0d0044;
+        public static final int exported_to=0x7f0d008e;
+        public static final int failure=0x7f0d0091;
+        public static final int faq=0x7f0d0047;
+        public static final int fill_text_field=0x7f0d0094;
+        public static final int forget_password_text=0x7f0d006c;
+        public static final int generate_key_button=0x7f0d0041;
+        public static final int hello=0x7f0d0032;
+        public static final int invalid_key=0x7f0d0092;
+        public static final int invalid_public_key=0x7f0d0068;
+        public static final int item_removed=0x7f0d0059;
+        public static final int keypair_name=0x7f0d0056;
         public static final int loading=0x7f0d001c;
-        public static final int manage_keys=0x7f0d0034;
-        public static final int new_pass=0x7f0d0039;
-        public static final int new_security_question=0x7f0d0083;
-        public static final int next=0x7f0d006d;
-        public static final int no=0x7f0d005a;
+        public static final int manage_keys=0x7f0d0037;
+        public static final int new_pass=0x7f0d003c;
+        public static final int new_security_question=0x7f0d0086;
+        public static final int next=0x7f0d0070;
+        public static final int next_button_label=0x7f0d002f;
+        public static final int no=0x7f0d005d;
         public static final int noApplications=0x7f0d001d;
-        public static final int no_pair=0x7f0d0040;
-        public static final int no_such_folder=0x7f0d0061;
+        public static final int no_pair=0x7f0d0043;
+        public static final int no_such_folder=0x7f0d0064;
         public static final int number_picker_decrement_button=0x7f0d001e;
         public static final int number_picker_increment_button=0x7f0d001f;
         public static final int number_picker_increment_scroll_action=0x7f0d0020;
         public static final int number_picker_increment_scroll_mode=0x7f0d0021;
-        public static final int ok=0x7f0d0032;
-        public static final int pair_already_exists_description=0x7f0d0050;
-        public static final int pass_request=0x7f0d0031;
-        public static final int password=0x7f0d0085;
-        public static final int password_is_empty=0x7f0d005c;
-        public static final int password_is_not_correct=0x7f0d0084;
-        public static final int password_is_not_correctpassword_is_not_correct=0x7f0d0046;
-        public static final int password_recovery=0x7f0d0086;
-        public static final int password_successfully_updated=0x7f0d0087;
-        public static final int passwords_do_not_match=0x7f0d005e;
-        public static final int private_key_export_warning=0x7f0d008d;
-        public static final int receiver_field_hint=0x7f0d007c;
-        public static final int remove=0x7f0d0043;
-        public static final int remove_pair_dialog_description=0x7f0d0058;
+        public static final int ok=0x7f0d0035;
+        public static final int pair_already_exists_description=0x7f0d0053;
+        public static final int pass_request=0x7f0d0034;
+        public static final int password=0x7f0d0088;
+        public static final int password_is_empty=0x7f0d005f;
+        public static final int password_is_not_correct=0x7f0d0087;
+        public static final int password_is_not_correctpassword_is_not_correct=0x7f0d0049;
+        public static final int password_recovery=0x7f0d0089;
+        public static final int password_successfully_updated=0x7f0d008a;
+        public static final int passwords_do_not_match=0x7f0d0061;
+        public static final int private_key_export_warning=0x7f0d0090;
+        public static final int receiver_field_hint=0x7f0d007f;
+        public static final int remove=0x7f0d0046;
+        public static final int remove_pair_dialog_description=0x7f0d005b;
         public static final int ringtone_default=0x7f0d0022;
         public static final int ringtone_picker_title=0x7f0d0023;
         public static final int ringtone_silent=0x7f0d0024;
-        public static final int security_answer=0x7f0d0080;
-        public static final int security_answer_is_incorrect=0x7f0d0090;
-        public static final int security_question=0x7f0d007f;
-        public static final int security_question_description=0x7f0d0073;
-        public static final int select_app_mode=0x7f0d0075;
-        public static final int select_public_key=0x7f0d0063;
-        public static final int select_publickey_text=0x7f0d003b;
-        public static final int selected_file=0x7f0d0049;
-        public static final int selected_key=0x7f0d004a;
-        public static final int send_encrypted_sms=0x7f0d0035;
-        public static final int send_sms=0x7f0d004c;
-        public static final int set_app_mode=0x7f0d008a;
-        public static final int set_app_pass=0x7f0d006e;
-        public static final int set_app_password=0x7f0d0089;
-        public static final int set_app_prefs=0x7f0d0071;
-        public static final int set_pass_first_run=0x7f0d0038;
-        public static final int set_security_question=0x7f0d0072;
-        public static final int settings=0x7f0d0037;
-        public static final int simple_mode=0x7f0d007a;
-        public static final int simple_mode_description=0x7f0d0078;
-        public static final int something_went_wrong=0x7f0d0060;
-        public static final int start_app=0x7f0d0070;
+        public static final int security_answer=0x7f0d0083;
+        public static final int security_answer_is_incorrect=0x7f0d0093;
+        public static final int security_question=0x7f0d0082;
+        public static final int security_question_description=0x7f0d0076;
+        public static final int select_app_mode=0x7f0d0078;
+        public static final int select_public_key=0x7f0d0066;
+        public static final int select_publickey_text=0x7f0d003e;
+        public static final int selected_file=0x7f0d004c;
+        public static final int selected_key=0x7f0d004d;
+        public static final int send_encrypted_sms=0x7f0d0038;
+        public static final int send_sms=0x7f0d004f;
+        public static final int set_app_mode=0x7f0d008d;
+        public static final int set_app_pass=0x7f0d0071;
+        public static final int set_app_password=0x7f0d008c;
+        public static final int set_app_prefs=0x7f0d0074;
+        public static final int set_pass_first_run=0x7f0d003b;
+        public static final int set_security_question=0x7f0d0075;
+        public static final int settings=0x7f0d003a;
+        public static final int simple_mode=0x7f0d007d;
+        public static final int simple_mode_description=0x7f0d007b;
+        public static final int skip_button_label=0x7f0d0030;
+        public static final int something_went_wrong=0x7f0d0063;
+        public static final int start_app=0x7f0d0073;
         public static final int time_picker_decrement_hour_button=0x7f0d0025;
         public static final int time_picker_decrement_minute_button=0x7f0d0026;
         public static final int time_picker_decrement_set_am_button=0x7f0d0027;
@@ -2498,13 +3031,13 @@ containing a value of this type.
         public static final int time_picker_increment_minute_button=0x7f0d002a;
         public static final int time_picker_increment_set_pm_button=0x7f0d002b;
         public static final int time_picker_separator=0x7f0d002c;
-        public static final int to=0x7f0d007d;
-        public static final int view_inbox=0x7f0d0036;
-        public static final int warning=0x7f0d008c;
-        public static final int welcome_text=0x7f0d006a;
+        public static final int to=0x7f0d0080;
+        public static final int view_inbox=0x7f0d0039;
+        public static final int warning=0x7f0d008f;
+        public static final int welcome_text=0x7f0d006d;
         public static final int whichApplication=0x7f0d002d;
-        public static final int wrong_password=0x7f0d005f;
-        public static final int yes=0x7f0d0059;
+        public static final int wrong_password=0x7f0d0062;
+        public static final int yes=0x7f0d005c;
     }
     public static final class style {
         public static final int Holo=0x7f0e0068;
@@ -2557,6 +3090,12 @@ containing a value of this type.
         public static final int Holo_GridView=0x7f0e0089;
         public static final int Holo_ImageButton=0x7f0e008a;
         public static final int Holo_ImageButton_Light=0x7f0e008b;
+        /** End of block PreferenceBase
+         */
+        public static final int Holo_Internal_Preference=0x7f0e0104;
+        /** End of block PreferenceBase
+         */
+        public static final int Holo_Internal_Preference_Light=0x7f0e0105;
         public static final int Holo_ListPopupWindow=0x7f0e008c;
         public static final int Holo_ListPopupWindow_Light=0x7f0e008d;
         public static final int Holo_ListView=0x7f0e008e;
@@ -2566,6 +3105,25 @@ containing a value of this type.
         public static final int Holo_NumberPicker=0x7f0e0092;
         public static final int Holo_PopupWindow=0x7f0e0093;
         public static final int Holo_PopupWindow_Light=0x7f0e0094;
+        public static final int Holo_Preference=0x7f0e00f1;
+        public static final int Holo_PreferenceCategory=0x7f0e00f2;
+        public static final int Holo_PreferenceCheckBox=0x7f0e00f3;
+        public static final int Holo_PreferenceDate=0x7f0e00f4;
+        public static final int Holo_PreferenceDialog=0x7f0e00f5;
+        public static final int Holo_PreferenceDialog_EditTextPreference=0x7f0e00f6;
+        public static final int Holo_PreferenceDialog_NumberPickerPreference=0x7f0e00f7;
+        public static final int Holo_PreferenceDialog_SeekBarDialogPreference=0x7f0e00f8;
+        public static final int Holo_PreferenceDialog_YesNoPreference=0x7f0e00f9;
+        public static final int Holo_PreferenceFragment=0x7f0e00fa;
+        public static final int Holo_PreferenceFrameLayout=0x7f0e00fb;
+        public static final int Holo_PreferenceInformation=0x7f0e00fc;
+        public static final int Holo_PreferencePanel=0x7f0e00fd;
+        public static final int Holo_PreferenceRingtone=0x7f0e00fe;
+        public static final int Holo_PreferenceScreen=0x7f0e00ff;
+        public static final int Holo_PreferenceSeekBar=0x7f0e0100;
+        public static final int Holo_PreferenceSwitch=0x7f0e0101;
+        public static final int Holo_PreferenceTime=0x7f0e0102;
+        public static final int Holo_PreferenceTwoState=0x7f0e0103;
         public static final int Holo_ProgressBar=0x7f0e0095;
         public static final int Holo_ProgressBar_Horizontal=0x7f0e0096;
         public static final int Holo_ProgressBar_Horizontal_Light=0x7f0e0097;
@@ -3631,6 +4189,111 @@ containing a value of this type.
           @attr name ir.secure_msg:startYear
         */
         public static final int DatePicker_startYear = 7;
+        /** Start styleable definition block
+         */
+        public static final int[] DatePreference = {
+            
+        };
+        /** Attributes that can be used with a DialogPreference.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #DialogPreference_dialogIcon ir.secure_msg:dialogIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #DialogPreference_dialogLayout ir.secure_msg:dialogLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #DialogPreference_dialogMessage ir.secure_msg:dialogMessage}</code></td><td></td></tr>
+           <tr><td><code>{@link #DialogPreference_dialogTitle ir.secure_msg:dialogTitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #DialogPreference_negativeButtonText ir.secure_msg:negativeButtonText}</code></td><td></td></tr>
+           <tr><td><code>{@link #DialogPreference_positiveButtonText ir.secure_msg:positiveButtonText}</code></td><td></td></tr>
+           </table>
+           @see #DialogPreference_dialogIcon
+           @see #DialogPreference_dialogLayout
+           @see #DialogPreference_dialogMessage
+           @see #DialogPreference_dialogTitle
+           @see #DialogPreference_negativeButtonText
+           @see #DialogPreference_positiveButtonText
+         */
+        public static final int[] DialogPreference = {
+            0x7f0100d4, 0x7f0100d5, 0x7f0100d6, 0x7f0100d8,
+            0x7f0100e7, 0x7f0100ec
+        };
+        /**
+          <p>This symbol is the offset where the {@link ir.secure_msg.R.attr#dialogIcon}
+          attribute's value can be found in the {@link #DialogPreference} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name ir.secure_msg:dialogIcon
+        */
+        public static final int DialogPreference_dialogIcon = 0;
+        /**
+          <p>This symbol is the offset where the {@link ir.secure_msg.R.attr#dialogLayout}
+          attribute's value can be found in the {@link #DialogPreference} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name ir.secure_msg:dialogLayout
+        */
+        public static final int DialogPreference_dialogLayout = 1;
+        /**
+          <p>This symbol is the offset where the {@link ir.secure_msg.R.attr#dialogMessage}
+          attribute's value can be found in the {@link #DialogPreference} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ir.secure_msg:dialogMessage
+        */
+        public static final int DialogPreference_dialogMessage = 2;
+        /**
+          <p>This symbol is the offset where the {@link ir.secure_msg.R.attr#dialogTitle}
+          attribute's value can be found in the {@link #DialogPreference} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ir.secure_msg:dialogTitle
+        */
+        public static final int DialogPreference_dialogTitle = 3;
+        /**
+          <p>This symbol is the offset where the {@link ir.secure_msg.R.attr#negativeButtonText}
+          attribute's value can be found in the {@link #DialogPreference} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ir.secure_msg:negativeButtonText
+        */
+        public static final int DialogPreference_negativeButtonText = 4;
+        /**
+          <p>This symbol is the offset where the {@link ir.secure_msg.R.attr#positiveButtonText}
+          attribute's value can be found in the {@link #DialogPreference} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ir.secure_msg:positiveButtonText
+        */
+        public static final int DialogPreference_positiveButtonText = 5;
         /** Attributes that can be used with a Divider.
            <p>Includes the following attributes:</p>
            <table>
@@ -3718,6 +4381,54 @@ containing a value of this type.
           @attr name android:indicatorRight
         */
         public static final int ExpandableListView_android_indicatorRight = 3;
+        /** Attributes that can be used with a Extra.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #Extra_name ir.secure_msg:name}</code></td><td></td></tr>
+           <tr><td><code>{@link #Extra_value ir.secure_msg:value}</code></td><td></td></tr>
+           </table>
+           @see #Extra_name
+           @see #Extra_value
+         */
+        public static final int[] Extra = {
+            0x7f0100e6, 0x7f010107
+        };
+        /**
+          <p>This symbol is the offset where the {@link ir.secure_msg.R.attr#name}
+          attribute's value can be found in the {@link #Extra} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ir.secure_msg:name
+        */
+        public static final int Extra_name = 0;
+        /**
+          <p>This symbol is the offset where the {@link ir.secure_msg.R.attr#value}
+          attribute's value can be found in the {@link #Extra} array.
+
+
+          <p>May be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>May be an integer value, such as "<code>100</code>".
+<p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>May be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ir.secure_msg:value
+        */
+        public static final int Extra_value = 1;
         /** Attributes that can be used with a FastScroll.
            <p>Includes the following attributes:</p>
            <table>
@@ -3866,6 +4577,127 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           @attr name android:rowHeight
         */
         public static final int IconMenuView_android_rowHeight = 0;
+        /** Attributes that can be used with a Intent.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #Intent_action ir.secure_msg:action}</code></td><td>Start attrs definition block</td></tr>
+           <tr><td><code>{@link #Intent_data ir.secure_msg:data}</code></td><td></td></tr>
+           <tr><td><code>{@link #Intent_mimeType ir.secure_msg:mimeType}</code></td><td></td></tr>
+           <tr><td><code>{@link #Intent_targetClass ir.secure_msg:targetClass}</code></td><td></td></tr>
+           <tr><td><code>{@link #Intent_targetPackage ir.secure_msg:targetPackage}</code></td><td></td></tr>
+           </table>
+           @see #Intent_action
+           @see #Intent_data
+           @see #Intent_mimeType
+           @see #Intent_targetClass
+           @see #Intent_targetPackage
+         */
+        public static final int[] Intent = {
+            0x7f0100c7, 0x7f0100cf, 0x7f0100e4, 0x7f010104,
+            0x7f010105
+        };
+        /**
+          <p>
+          @attr description
+          Start attrs definition block
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name ir.secure_msg:action
+        */
+        public static final int Intent_action = 0;
+        /**
+          <p>This symbol is the offset where the {@link ir.secure_msg.R.attr#data}
+          attribute's value can be found in the {@link #Intent} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ir.secure_msg:data
+        */
+        public static final int Intent_data = 1;
+        /**
+          <p>This symbol is the offset where the {@link ir.secure_msg.R.attr#mimeType}
+          attribute's value can be found in the {@link #Intent} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ir.secure_msg:mimeType
+        */
+        public static final int Intent_mimeType = 2;
+        /**
+          <p>This symbol is the offset where the {@link ir.secure_msg.R.attr#targetClass}
+          attribute's value can be found in the {@link #Intent} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ir.secure_msg:targetClass
+        */
+        public static final int Intent_targetClass = 3;
+        /**
+          <p>This symbol is the offset where the {@link ir.secure_msg.R.attr#targetPackage}
+          attribute's value can be found in the {@link #Intent} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ir.secure_msg:targetPackage
+        */
+        public static final int Intent_targetPackage = 4;
+        /** Attributes that can be used with a IntentCategory.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #IntentCategory_name ir.secure_msg:name}</code></td><td></td></tr>
+           </table>
+           @see #IntentCategory_name
+         */
+        public static final int[] IntentCategory = {
+            0x7f0100e6
+        };
+        /**
+          <p>This symbol is the offset where the {@link ir.secure_msg.R.attr#name}
+          attribute's value can be found in the {@link #IntentCategory} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ir.secure_msg:name
+        */
+        public static final int IntentCategory_name = 0;
         /** Attributes that can be used with a LayerDrawable.
            <p>Includes the following attributes:</p>
            <table>
@@ -4030,6 +4862,41 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           @attr name android:weightSum
         */
         public static final int LinearLayout_android_weightSum = 4;
+        /** Attributes that can be used with a ListPreference.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #ListPreference_entries ir.secure_msg:entries}</code></td><td></td></tr>
+           <tr><td><code>{@link #ListPreference_entryValues ir.secure_msg:entryValues}</code></td><td></td></tr>
+           </table>
+           @see #ListPreference_entries
+           @see #ListPreference_entryValues
+         */
+        public static final int[] ListPreference = {
+            0x7f0100dc, 0x7f0100dd
+        };
+        /**
+          <p>This symbol is the offset where the {@link ir.secure_msg.R.attr#entries}
+          attribute's value can be found in the {@link #ListPreference} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name ir.secure_msg:entries
+        */
+        public static final int ListPreference_entries = 0;
+        /**
+          <p>This symbol is the offset where the {@link ir.secure_msg.R.attr#entryValues}
+          attribute's value can be found in the {@link #ListPreference} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name ir.secure_msg:entryValues
+        */
+        public static final int ListPreference_entryValues = 1;
         /** Attributes that can be used with a MenuView.
            <p>Includes the following attributes:</p>
            <table>
@@ -4276,6 +5143,65 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           @attr name ir.secure_msg:virtualButtonPressedDrawable
         */
         public static final int NumberPicker_virtualButtonPressedDrawable = 12;
+        /** Attributes that can be used with a NumberPickerPreference.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #NumberPickerPreference_max ir.secure_msg:max}</code></td><td></td></tr>
+           <tr><td><code>{@link #NumberPickerPreference_min ir.secure_msg:min}</code></td><td></td></tr>
+           <tr><td><code>{@link #NumberPickerPreference_wrapSelectorWheel ir.secure_msg:wrapSelectorWheel}</code></td><td></td></tr>
+           </table>
+           @see #NumberPickerPreference_max
+           @see #NumberPickerPreference_min
+           @see #NumberPickerPreference_wrapSelectorWheel
+         */
+        public static final int[] NumberPickerPreference = {
+            0x7f0100e3, 0x7f0100e5, 0x7f010109
+        };
+        /**
+          <p>This symbol is the offset where the {@link ir.secure_msg.R.attr#max}
+          attribute's value can be found in the {@link #NumberPickerPreference} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ir.secure_msg:max
+        */
+        public static final int NumberPickerPreference_max = 0;
+        /**
+          <p>This symbol is the offset where the {@link ir.secure_msg.R.attr#min}
+          attribute's value can be found in the {@link #NumberPickerPreference} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ir.secure_msg:min
+        */
+        public static final int NumberPickerPreference_min = 1;
+        /**
+          <p>This symbol is the offset where the {@link ir.secure_msg.R.attr#wrapSelectorWheel}
+          attribute's value can be found in the {@link #NumberPickerPreference} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ir.secure_msg:wrapSelectorWheel
+        */
+        public static final int NumberPickerPreference_wrapSelectorWheel = 2;
         /** Attributes that can be used with a PopupWindow.
            <p>Includes the following attributes:</p>
            <table>
@@ -4303,6 +5229,517 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           @attr name android:popupBackground
         */
         public static final int PopupWindow_android_popupBackground = 0;
+        /** Attributes that can be used with a Preference.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #Preference_defaultValue ir.secure_msg:defaultValue}</code></td><td></td></tr>
+           <tr><td><code>{@link #Preference_dependency ir.secure_msg:dependency}</code></td><td></td></tr>
+           <tr><td><code>{@link #Preference_depends ir.secure_msg:depends}</code></td><td></td></tr>
+           <tr><td><code>{@link #Preference_enabled ir.secure_msg:enabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #Preference_fragment ir.secure_msg:fragment}</code></td><td></td></tr>
+           <tr><td><code>{@link #Preference_icon ir.secure_msg:icon}</code></td><td> Specifies the drawable used for the application icon.</td></tr>
+           <tr><td><code>{@link #Preference_id ir.secure_msg:id}</code></td><td></td></tr>
+           <tr><td><code>{@link #Preference_key ir.secure_msg:key}</code></td><td></td></tr>
+           <tr><td><code>{@link #Preference_layout ir.secure_msg:layout}</code></td><td></td></tr>
+           <tr><td><code>{@link #Preference_order ir.secure_msg:order}</code></td><td></td></tr>
+           <tr><td><code>{@link #Preference_persistent ir.secure_msg:persistent}</code></td><td></td></tr>
+           <tr><td><code>{@link #Preference_selectable ir.secure_msg:selectable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Preference_shouldDisableView ir.secure_msg:shouldDisableView}</code></td><td></td></tr>
+           <tr><td><code>{@link #Preference_summary ir.secure_msg:summary}</code></td><td></td></tr>
+           <tr><td><code>{@link #Preference_title ir.secure_msg:title}</code></td><td> Specifies title text used for navigationMode="normal" </td></tr>
+           <tr><td><code>{@link #Preference_widgetLayout ir.secure_msg:widgetLayout}</code></td><td></td></tr>
+           </table>
+           @see #Preference_defaultValue
+           @see #Preference_dependency
+           @see #Preference_depends
+           @see #Preference_enabled
+           @see #Preference_fragment
+           @see #Preference_icon
+           @see #Preference_id
+           @see #Preference_key
+           @see #Preference_layout
+           @see #Preference_order
+           @see #Preference_persistent
+           @see #Preference_selectable
+           @see #Preference_shouldDisableView
+           @see #Preference_summary
+           @see #Preference_title
+           @see #Preference_widgetLayout
+         */
+        public static final int[] Preference = {
+            0x7f01004b, 0x7f01004d, 0x7f01008c, 0x7f0100d1,
+            0x7f0100d2, 0x7f0100d3, 0x7f0100db, 0x7f0100de,
+            0x7f0100df, 0x7f0100e1, 0x7f0100e9, 0x7f0100eb,
+            0x7f0100f9, 0x7f0100fa, 0x7f0100fe, 0x7f010108
+        };
+        /**
+          <p>This symbol is the offset where the {@link ir.secure_msg.R.attr#defaultValue}
+          attribute's value can be found in the {@link #Preference} array.
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>May be an integer value, such as "<code>100</code>".
+<p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>May be a floating point value, such as "<code>1.2</code>".
+          @attr name ir.secure_msg:defaultValue
+        */
+        public static final int Preference_defaultValue = 3;
+        /**
+          <p>This symbol is the offset where the {@link ir.secure_msg.R.attr#dependency}
+          attribute's value can be found in the {@link #Preference} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ir.secure_msg:dependency
+        */
+        public static final int Preference_dependency = 4;
+        /**
+          <p>This symbol is the offset where the {@link ir.secure_msg.R.attr#depends}
+          attribute's value can be found in the {@link #Preference} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name ir.secure_msg:depends
+        */
+        public static final int Preference_depends = 5;
+        /**
+          <p>This symbol is the offset where the {@link ir.secure_msg.R.attr#enabled}
+          attribute's value can be found in the {@link #Preference} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ir.secure_msg:enabled
+        */
+        public static final int Preference_enabled = 6;
+        /**
+          <p>This symbol is the offset where the {@link ir.secure_msg.R.attr#fragment}
+          attribute's value can be found in the {@link #Preference} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ir.secure_msg:fragment
+        */
+        public static final int Preference_fragment = 7;
+        /**
+          <p>
+          @attr description
+           Specifies the drawable used for the application icon. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name ir.secure_msg:icon
+        */
+        public static final int Preference_icon = 1;
+        /**
+          <p>This symbol is the offset where the {@link ir.secure_msg.R.attr#id}
+          attribute's value can be found in the {@link #Preference} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name ir.secure_msg:id
+        */
+        public static final int Preference_id = 8;
+        /**
+          <p>This symbol is the offset where the {@link ir.secure_msg.R.attr#key}
+          attribute's value can be found in the {@link #Preference} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ir.secure_msg:key
+        */
+        public static final int Preference_key = 9;
+        /**
+          <p>This symbol is the offset where the {@link ir.secure_msg.R.attr#layout}
+          attribute's value can be found in the {@link #Preference} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name ir.secure_msg:layout
+        */
+        public static final int Preference_layout = 2;
+        /**
+          <p>This symbol is the offset where the {@link ir.secure_msg.R.attr#order}
+          attribute's value can be found in the {@link #Preference} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ir.secure_msg:order
+        */
+        public static final int Preference_order = 10;
+        /**
+          <p>This symbol is the offset where the {@link ir.secure_msg.R.attr#persistent}
+          attribute's value can be found in the {@link #Preference} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ir.secure_msg:persistent
+        */
+        public static final int Preference_persistent = 11;
+        /**
+          <p>This symbol is the offset where the {@link ir.secure_msg.R.attr#selectable}
+          attribute's value can be found in the {@link #Preference} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ir.secure_msg:selectable
+        */
+        public static final int Preference_selectable = 12;
+        /**
+          <p>This symbol is the offset where the {@link ir.secure_msg.R.attr#shouldDisableView}
+          attribute's value can be found in the {@link #Preference} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ir.secure_msg:shouldDisableView
+        */
+        public static final int Preference_shouldDisableView = 13;
+        /**
+          <p>This symbol is the offset where the {@link ir.secure_msg.R.attr#summary}
+          attribute's value can be found in the {@link #Preference} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ir.secure_msg:summary
+        */
+        public static final int Preference_summary = 14;
+        /**
+          <p>
+          @attr description
+           Specifies title text used for navigationMode="normal" 
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name ir.secure_msg:title
+        */
+        public static final int Preference_title = 0;
+        /**
+          <p>This symbol is the offset where the {@link ir.secure_msg.R.attr#widgetLayout}
+          attribute's value can be found in the {@link #Preference} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name ir.secure_msg:widgetLayout
+        */
+        public static final int Preference_widgetLayout = 15;
+        /** Attributes that can be used with a PreferenceFrameLayout.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #PreferenceFrameLayout_borderBottom ir.secure_msg:borderBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #PreferenceFrameLayout_borderLeft ir.secure_msg:borderLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #PreferenceFrameLayout_borderRight ir.secure_msg:borderRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #PreferenceFrameLayout_borderTop ir.secure_msg:borderTop}</code></td><td></td></tr>
+           </table>
+           @see #PreferenceFrameLayout_borderBottom
+           @see #PreferenceFrameLayout_borderLeft
+           @see #PreferenceFrameLayout_borderRight
+           @see #PreferenceFrameLayout_borderTop
+         */
+        public static final int[] PreferenceFrameLayout = {
+            0x7f0100c8, 0x7f0100c9, 0x7f0100ca, 0x7f0100cb
+        };
+        /**
+          <p>This symbol is the offset where the {@link ir.secure_msg.R.attr#borderBottom}
+          attribute's value can be found in the {@link #PreferenceFrameLayout} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ir.secure_msg:borderBottom
+        */
+        public static final int PreferenceFrameLayout_borderBottom = 0;
+        /**
+          <p>This symbol is the offset where the {@link ir.secure_msg.R.attr#borderLeft}
+          attribute's value can be found in the {@link #PreferenceFrameLayout} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ir.secure_msg:borderLeft
+        */
+        public static final int PreferenceFrameLayout_borderLeft = 1;
+        /**
+          <p>This symbol is the offset where the {@link ir.secure_msg.R.attr#borderRight}
+          attribute's value can be found in the {@link #PreferenceFrameLayout} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ir.secure_msg:borderRight
+        */
+        public static final int PreferenceFrameLayout_borderRight = 2;
+        /**
+          <p>This symbol is the offset where the {@link ir.secure_msg.R.attr#borderTop}
+          attribute's value can be found in the {@link #PreferenceFrameLayout} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ir.secure_msg:borderTop
+        */
+        public static final int PreferenceFrameLayout_borderTop = 3;
+        /** Attributes that can be used with a PreferenceFrameLayout_Layout.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #PreferenceFrameLayout_Layout_layout_removeBorders ir.secure_msg:layout_removeBorders}</code></td><td></td></tr>
+           </table>
+           @see #PreferenceFrameLayout_Layout_layout_removeBorders
+         */
+        public static final int[] PreferenceFrameLayout_Layout = {
+            0x7f0100e2
+        };
+        /**
+          <p>This symbol is the offset where the {@link ir.secure_msg.R.attr#layout_removeBorders}
+          attribute's value can be found in the {@link #PreferenceFrameLayout_Layout} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ir.secure_msg:layout_removeBorders
+        */
+        public static final int PreferenceFrameLayout_Layout_layout_removeBorders = 0;
+        /** Attributes that can be used with a PreferenceGroup.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #PreferenceGroup_orderingFromXml ir.secure_msg:orderingFromXml}</code></td><td></td></tr>
+           </table>
+           @see #PreferenceGroup_orderingFromXml
+         */
+        public static final int[] PreferenceGroup = {
+            0x7f0100ea
+        };
+        /**
+          <p>This symbol is the offset where the {@link ir.secure_msg.R.attr#orderingFromXml}
+          attribute's value can be found in the {@link #PreferenceGroup} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ir.secure_msg:orderingFromXml
+        */
+        public static final int PreferenceGroup_orderingFromXml = 0;
+        /** Attributes that can be used with a PreferenceHeader.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #PreferenceHeader_breadCrumbShortTitle ir.secure_msg:breadCrumbShortTitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #PreferenceHeader_breadCrumbTitle ir.secure_msg:breadCrumbTitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #PreferenceHeader_fragment ir.secure_msg:fragment}</code></td><td></td></tr>
+           <tr><td><code>{@link #PreferenceHeader_icon ir.secure_msg:icon}</code></td><td> Specifies the drawable used for the application icon.</td></tr>
+           <tr><td><code>{@link #PreferenceHeader_id ir.secure_msg:id}</code></td><td></td></tr>
+           <tr><td><code>{@link #PreferenceHeader_summary ir.secure_msg:summary}</code></td><td></td></tr>
+           <tr><td><code>{@link #PreferenceHeader_title ir.secure_msg:title}</code></td><td> Specifies title text used for navigationMode="normal" </td></tr>
+           </table>
+           @see #PreferenceHeader_breadCrumbShortTitle
+           @see #PreferenceHeader_breadCrumbTitle
+           @see #PreferenceHeader_fragment
+           @see #PreferenceHeader_icon
+           @see #PreferenceHeader_id
+           @see #PreferenceHeader_summary
+           @see #PreferenceHeader_title
+         */
+        public static final int[] PreferenceHeader = {
+            0x7f01004b, 0x7f01004d, 0x7f0100cc, 0x7f0100cd,
+            0x7f0100de, 0x7f0100df, 0x7f0100fe
+        };
+        /**
+          <p>This symbol is the offset where the {@link ir.secure_msg.R.attr#breadCrumbShortTitle}
+          attribute's value can be found in the {@link #PreferenceHeader} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ir.secure_msg:breadCrumbShortTitle
+        */
+        public static final int PreferenceHeader_breadCrumbShortTitle = 2;
+        /**
+          <p>This symbol is the offset where the {@link ir.secure_msg.R.attr#breadCrumbTitle}
+          attribute's value can be found in the {@link #PreferenceHeader} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ir.secure_msg:breadCrumbTitle
+        */
+        public static final int PreferenceHeader_breadCrumbTitle = 3;
+        /**
+          <p>This symbol is the offset where the {@link ir.secure_msg.R.attr#fragment}
+          attribute's value can be found in the {@link #PreferenceHeader} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ir.secure_msg:fragment
+        */
+        public static final int PreferenceHeader_fragment = 4;
+        /**
+          <p>
+          @attr description
+           Specifies the drawable used for the application icon. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name ir.secure_msg:icon
+        */
+        public static final int PreferenceHeader_icon = 1;
+        /**
+          <p>This symbol is the offset where the {@link ir.secure_msg.R.attr#id}
+          attribute's value can be found in the {@link #PreferenceHeader} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name ir.secure_msg:id
+        */
+        public static final int PreferenceHeader_id = 5;
+        /**
+          <p>This symbol is the offset where the {@link ir.secure_msg.R.attr#summary}
+          attribute's value can be found in the {@link #PreferenceHeader} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ir.secure_msg:summary
+        */
+        public static final int PreferenceHeader_summary = 6;
+        /**
+          <p>
+          @attr description
+           Specifies title text used for navigationMode="normal" 
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name ir.secure_msg:title
+        */
+        public static final int PreferenceHeader_title = 0;
         /** Attributes that can be used with a ProgressBar.
            <p>Includes the following attributes:</p>
            <table>
@@ -4429,6 +5866,70 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           @attr name android:secondaryProgress
         */
         public static final int ProgressBar_android_secondaryProgress = 4;
+        /** Attributes that can be used with a RingtonePreference.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #RingtonePreference_ringtoneType ir.secure_msg:ringtoneType}</code></td><td></td></tr>
+           <tr><td><code>{@link #RingtonePreference_showDefault ir.secure_msg:showDefault}</code></td><td></td></tr>
+           <tr><td><code>{@link #RingtonePreference_showSilent ir.secure_msg:showSilent}</code></td><td></td></tr>
+           </table>
+           @see #RingtonePreference_ringtoneType
+           @see #RingtonePreference_showDefault
+           @see #RingtonePreference_showSilent
+         */
+        public static final int[] RingtonePreference = {
+            0x7f0100f6, 0x7f0100fb, 0x7f0100fc
+        };
+        /**
+          <p>This symbol is the offset where the {@link ir.secure_msg.R.attr#ringtoneType}
+          attribute's value can be found in the {@link #RingtonePreference} array.
+
+
+          <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>alarm</code></td><td>4</td><td></td></tr>
+<tr><td><code>all</code></td><td>7</td><td></td></tr>
+<tr><td><code>notification</code></td><td>2</td><td></td></tr>
+<tr><td><code>ringtone</code></td><td>1</td><td></td></tr>
+</table>
+          @attr name ir.secure_msg:ringtoneType
+        */
+        public static final int RingtonePreference_ringtoneType = 0;
+        /**
+          <p>This symbol is the offset where the {@link ir.secure_msg.R.attr#showDefault}
+          attribute's value can be found in the {@link #RingtonePreference} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ir.secure_msg:showDefault
+        */
+        public static final int RingtonePreference_showDefault = 1;
+        /**
+          <p>This symbol is the offset where the {@link ir.secure_msg.R.attr#showSilent}
+          attribute's value can be found in the {@link #RingtonePreference} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ir.secure_msg:showSilent
+        */
+        public static final int RingtonePreference_showSilent = 2;
         /** Attributes that can be used with a RotateDrawable.
            <p>Includes the following attributes:</p>
            <table>
@@ -4524,6 +6025,60 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           @attr name android:thumbOffset
         */
         public static final int SeekBar_android_thumbOffset = 2;
+        /** Attributes that can be used with a SeekBarDialogPreference.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #SeekBarDialogPreference_max ir.secure_msg:max}</code></td><td></td></tr>
+           </table>
+           @see #SeekBarDialogPreference_max
+         */
+        public static final int[] SeekBarDialogPreference = {
+            0x7f0100e3
+        };
+        /**
+          <p>This symbol is the offset where the {@link ir.secure_msg.R.attr#max}
+          attribute's value can be found in the {@link #SeekBarDialogPreference} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ir.secure_msg:max
+        */
+        public static final int SeekBarDialogPreference_max = 0;
+        /** Attributes that can be used with a SeekBarPreference.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #SeekBarPreference_max ir.secure_msg:max}</code></td><td></td></tr>
+           </table>
+           @see #SeekBarPreference_max
+         */
+        public static final int[] SeekBarPreference = {
+            0x7f0100e3
+        };
+        /**
+          <p>This symbol is the offset where the {@link ir.secure_msg.R.attr#max}
+          attribute's value can be found in the {@link #SeekBarPreference} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ir.secure_msg:max
+        */
+        public static final int SeekBarPreference_max = 0;
         /**  Attributes used to style the Action Bar. 
            <p>Includes the following attributes:</p>
            <table>
@@ -7033,6 +8588,49 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           @attr name ir.secure_msg:track
         */
         public static final int Switch_track = 8;
+        /** Attributes that can be used with a SwitchPreference.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #SwitchPreference_switchTextOff ir.secure_msg:switchTextOff}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchPreference_switchTextOn ir.secure_msg:switchTextOn}</code></td><td></td></tr>
+           </table>
+           @see #SwitchPreference_switchTextOff
+           @see #SwitchPreference_switchTextOn
+         */
+        public static final int[] SwitchPreference = {
+            0x7f010102, 0x7f010103
+        };
+        /**
+          <p>This symbol is the offset where the {@link ir.secure_msg.R.attr#switchTextOff}
+          attribute's value can be found in the {@link #SwitchPreference} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ir.secure_msg:switchTextOff
+        */
+        public static final int SwitchPreference_switchTextOff = 0;
+        /**
+          <p>This symbol is the offset where the {@link ir.secure_msg.R.attr#switchTextOn}
+          attribute's value can be found in the {@link #SwitchPreference} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ir.secure_msg:switchTextOn
+        */
+        public static final int SwitchPreference_switchTextOn = 1;
         /** Attributes that can be used with a TextAppearance.
            <p>Includes the following attributes:</p>
            <table>
@@ -7160,6 +8758,129 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           @attr name ir.secure_msg:layout
         */
         public static final int TimePicker_layout = 0;
+        /** Attributes that can be used with a TimePreference.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #TimePreference_is24HourView ir.secure_msg:is24HourView}</code></td><td></td></tr>
+           </table>
+           @see #TimePreference_is24HourView
+         */
+        public static final int[] TimePreference = {
+            0x7f0100e0
+        };
+        /**
+          <p>This symbol is the offset where the {@link ir.secure_msg.R.attr#is24HourView}
+          attribute's value can be found in the {@link #TimePreference} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>auto</code></td><td>0</td><td></td></tr>
+<tr><td><code>no</code></td><td>-1</td><td></td></tr>
+<tr><td><code>yes</code></td><td>1</td><td></td></tr>
+</table>
+          @attr name ir.secure_msg:is24HourView
+        */
+        public static final int TimePreference_is24HourView = 0;
+        /** Attributes that can be used with a TwoStatePreference.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #TwoStatePreference_disableDependentsState ir.secure_msg:disableDependentsState}</code></td><td></td></tr>
+           <tr><td><code>{@link #TwoStatePreference_summaryOff ir.secure_msg:summaryOff}</code></td><td></td></tr>
+           <tr><td><code>{@link #TwoStatePreference_summaryOn ir.secure_msg:summaryOn}</code></td><td></td></tr>
+           </table>
+           @see #TwoStatePreference_disableDependentsState
+           @see #TwoStatePreference_summaryOff
+           @see #TwoStatePreference_summaryOn
+         */
+        public static final int[] TwoStatePreference = {
+            0x7f0100d9, 0x7f0100ff, 0x7f010100
+        };
+        /**
+          <p>This symbol is the offset where the {@link ir.secure_msg.R.attr#disableDependentsState}
+          attribute's value can be found in the {@link #TwoStatePreference} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ir.secure_msg:disableDependentsState
+        */
+        public static final int TwoStatePreference_disableDependentsState = 0;
+        /**
+          <p>This symbol is the offset where the {@link ir.secure_msg.R.attr#summaryOff}
+          attribute's value can be found in the {@link #TwoStatePreference} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ir.secure_msg:summaryOff
+        */
+        public static final int TwoStatePreference_summaryOff = 1;
+        /**
+          <p>This symbol is the offset where the {@link ir.secure_msg.R.attr#summaryOn}
+          attribute's value can be found in the {@link #TwoStatePreference} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ir.secure_msg:summaryOn
+        */
+        public static final int TwoStatePreference_summaryOn = 2;
+        /** Attributes that can be used with a VolumePreference.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #VolumePreference_streamType ir.secure_msg:streamType}</code></td><td></td></tr>
+           </table>
+           @see #VolumePreference_streamType
+         */
+        public static final int[] VolumePreference = {
+            0x7f0100fd
+        };
+        /**
+          <p>This symbol is the offset where the {@link ir.secure_msg.R.attr#streamType}
+          attribute's value can be found in the {@link #VolumePreference} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>alarm</code></td><td>4</td><td></td></tr>
+<tr><td><code>music</code></td><td>3</td><td></td></tr>
+<tr><td><code>ring</code></td><td>2</td><td></td></tr>
+<tr><td><code>system</code></td><td>1</td><td></td></tr>
+<tr><td><code>voice</code></td><td>0</td><td></td></tr>
+</table>
+          @attr name ir.secure_msg:streamType
+        */
+        public static final int VolumePreference_streamType = 0;
         /** Attributes that can be used with a WindowSizes.
            <p>Includes the following attributes:</p>
            <table>

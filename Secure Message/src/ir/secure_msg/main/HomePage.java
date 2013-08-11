@@ -24,7 +24,7 @@ import ir.secure_msg.documents.AboutUs;
 import ir.secure_msg.keygeneration.ManageKeys;
 import ir.secure_msg.preferences.HandlePreferences;
 import ir.secure_msg.preferences.PreferencesInterface;
-import ir.secure_msg.preferences.SettingsActivity;
+import ir.secure_msg.preferences.PreferencesActivity;
 import ir.secure_msg.sms.CreateEncryptedSMS;
 //import ir.secure_msg.sms.InboxActivity;
 import android.app.Activity;
@@ -112,7 +112,7 @@ public class HomePage extends Activity implements PreferencesInterface {
         settingsButton.setOnClickListener(new OnClickListener() {
 			
 			public void onClick(View arg0) {
-				Intent intent = new Intent(HomePage.this, SettingsActivity.class);
+				Intent intent = new Intent(HomePage.this, PreferencesActivity.class);
 				startActivity(intent);
 				finish();
 

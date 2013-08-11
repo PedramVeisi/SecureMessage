@@ -27,7 +27,7 @@ import android.os.Bundle;
 import android.preference.PreferenceActivity;
 import ir.secure_msg.R;
 
-public class SettingsActivity extends PreferenceActivity {
+public class PreferencesActivity extends PreferenceActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -50,7 +50,7 @@ public class SettingsActivity extends PreferenceActivity {
 	@Override
 	public void onBackPressed() {
 
-		Intent intent = new Intent(SettingsActivity.this, HomePage.class);
+		Intent intent = new Intent(PreferencesActivity.this, HomePage.class);
 		startActivity(intent);
 
 		super.onBackPressed();

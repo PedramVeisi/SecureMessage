@@ -49,7 +49,7 @@ public class SetFirstTimePrefs extends PreferenceActivity implements Preferences
 		setContentView(R.layout.first_time_prefs);
 		addPreferencesFromResource(R.xml.first_time_preferences);
 		
-		//Create keys folder in internal file folder
+		//Create keys folder in the internal file folder
 		boolean success = (new File(getFilesDir() + "/" + KEYS_FOLDER_NAME)).mkdirs();
 
 		setUpViews();
