@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package ir.secure_msg.IO;
+package ir.secure_msg.io;
 
 import java.io.File;
 import java.io.FilenameFilter;

@@ -20,11 +20,11 @@
 
 package ir.secure_msg.sms;
 
-import ir.secure_msg.IO.FilePickerActivity;
 import ir.secure_msg.contacts.ContactsManager;
 import ir.secure_msg.crypt.RSAEncrypt;
 import ir.secure_msg.crypt.ReadKey;
 import ir.secure_msg.crypt.XOREncryptDecrypt;
+import ir.secure_msg.io.FilePickerActivity;
 import ir.secure_msg.preferences.HandlePreferences;
 import ir.secure_msg.preferences.PreferencesInterface;
 

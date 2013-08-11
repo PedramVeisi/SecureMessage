@@ -69,7 +69,7 @@
 	<string name="start_app">Start Application</string>
 	<string name="set_app_prefs">Set application preferences</string>
 	<string name="set_security_question">Set Security Question</string>
-	<string name="security_question_description">In case of forgetting your password, application will ask you the security question and you must enter your answer.</string>
+	<string name="security_question_description">In case of forgetting your password, you must answer this question in order to reset your password.</string>
 	<string name="application_password">Application Password</string>
 	<string name="select_app_mode">Select application mode</string>
 	<string name="app_mode">Application Mode</string>

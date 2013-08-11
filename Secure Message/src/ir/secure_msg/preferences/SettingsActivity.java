@@ -31,6 +31,10 @@ public class SettingsActivity extends PreferenceActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		
+		//TODO Remove deprecated method
+		//http://developer.android.com/reference/android/preference/PreferenceActivity.html
+		
 		addPreferencesFromResource(R.xml.preferences);
 		setUpViews();
 	}

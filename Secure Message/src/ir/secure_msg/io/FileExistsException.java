@@ -18,34 +18,26 @@
 
  */
 
+package ir.secure_msg.io;
 
-package ir.secure_msg.IO;
+public class FileExistsException extends Exception {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	String exception;
 
-import java.io.File;
-
-import android.os.Environment;
-
-public class CreateAppFolder {
-
-	String appName;
-
-	public CreateAppFolder(String appName) {
-		this.appName = appName;
-
-		createAppFolder();
-
+	public FileExistsException() {
+		super();
+		exception = "Unknown";
 	}
 
-	private boolean createAppFolder() {
-
-		boolean status;
-
-		String appFolderAddr = Environment.getExternalStorageDirectory() + "/"
-				+ appName + "/";
-		
-		status = new File(appFolderAddr).mkdir();
-		
-		return status;
+	public FileExistsException(String exp) {
+		super(exp);
+		this.exception = exp;
 	}
 
+	public String getException() {
+		return this.exception;
+	}
 }

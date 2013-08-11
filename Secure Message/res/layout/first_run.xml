@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"
         android:background="#777777" >
 
-        <Button
+        <org.holoeverywhere.widget.Button
             android:id="@+id/cancel_button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -28,9 +28,9 @@
             android:text="@string/cancel"
             android:background="@drawable/buttons_layout"
             android:textColor="#FFFFFF" >
-        </Button>
+        </org.holoeverywhere.widget.Button>
 
-        <Button
+        <org.holoeverywhere.widget.Button
             android:id="@+id/next_button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -38,7 +38,7 @@
             android:background="@drawable/buttons_layout"
             android:text="@string/next"
             android:textColor="#FFFFFF" >
-        </Button>
+        </org.holoeverywhere.widget.Button>
     </LinearLayout>
 
 </LinearLayout>

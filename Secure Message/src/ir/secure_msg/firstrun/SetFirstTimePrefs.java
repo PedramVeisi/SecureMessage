@@ -27,6 +27,7 @@ import ir.secure_msg.main.HomePage;
 import ir.secure_msg.preferences.HandlePreferences;
 import ir.secure_msg.preferences.PreferencesInterface;
 import android.app.AlertDialog;
+import android.app.AlertDialog.Builder;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -93,14 +94,16 @@ public class SetFirstTimePrefs extends PreferenceActivity implements Preferences
 	
 	
 	void showWarning(String message){
-		AlertDialog alertDialog = new AlertDialog.Builder(SetFirstTimePrefs.this).create();
-		alertDialog.setTitle(getString(R.string.warning));
-		alertDialog.setMessage(message);
-		alertDialog.setButton(getString(R.string.ok), new DialogInterface.OnClickListener() {
-		      public void onClick(DialogInterface dialog, int which) {
-		    	  
-		    } });
-		alertDialog.show();
+		Builder alertDialogBuilder = new AlertDialog.Builder(SetFirstTimePrefs.this);
+		alertDialogBuilder.setTitle(getString(R.string.warning))
+		.setMessage(message)
+		.setCancelable(false)		
+		.setNegativeButton(R.string.ok,new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+                dialog.cancel();
+            } });
+        AlertDialog alert = alertDialogBuilder.create();
+        alert.show();
 	}
 	
 }

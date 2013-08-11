@@ -21,9 +21,9 @@
 
 package ir.secure_msg.keygeneration;
 
-import ir.secure_msg.IO.CopyFile;
-import ir.secure_msg.IO.CreateAppFolder;
-import ir.secure_msg.IO.FileExistsException;
+import ir.secure_msg.io.CopyFile;
+import ir.secure_msg.io.CreateAppFolder;
+import ir.secure_msg.io.FileExistsException;
 import ir.secure_msg.uicomponents.IconContextMenu;
 
 import java.io.BufferedOutputStream;
