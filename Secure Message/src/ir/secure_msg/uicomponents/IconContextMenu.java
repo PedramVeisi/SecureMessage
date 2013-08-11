@@ -19,9 +19,10 @@ package ir.secure_msg.uicomponents;
 
 import java.util.ArrayList;
 
-import android.app.Activity;
-import android.app.AlertDialog;
-import android.app.Dialog;
+import org.holoeverywhere.app.Activity;
+import org.holoeverywhere.app.AlertDialog;
+import org.holoeverywhere.app.Dialog;
+
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.res.Resources;

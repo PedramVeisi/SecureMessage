@@ -40,9 +40,10 @@ import java.security.spec.RSAPrivateKeySpec;
 import java.security.spec.RSAPublicKeySpec;
 import java.util.ArrayList;
 
-import android.app.AlertDialog;
-import android.app.Dialog;
-import android.app.ListActivity;
+import org.holoeverywhere.app.AlertDialog;
+import org.holoeverywhere.app.Dialog;
+import org.holoeverywhere.app.ListActivity;
+
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.res.Resources;
@@ -356,7 +357,7 @@ public class ManageKeys extends ListActivity {
 		if (id == CONTEXT_MENU_ID) {
 			return iconContextMenu.createMenu(getString(R.string.manage_keys));
 		}
-		return super.onCreateDialog(id);
+		return (Dialog) super.onCreateDialog(id);
 	}
 
 	private void showAlertDialog(int status, String title, String message) {
