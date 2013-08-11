@@ -140,9 +140,7 @@
 		                <category android:name="android.intent.category.DEFAULT" />
 		            </intent-filter>
 	
-	        </activity>
-	        
-	        
+	        </activity> 
 	        
 	        <activity 
 	            android:name=".firstrun.SetSecurityQuestion"
