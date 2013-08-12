@@ -75,7 +75,7 @@ public class HomePage extends Activity implements PreferencesInterface {
 		TextView viewInboxText = (TextView) findViewById(R.id.view_inbox_text);
 		TextView settingText = (TextView) findViewById(R.id.settings_text);
         //Button donationButton = (Button) findViewById(R.id.donation_button);
-        ImageButton viewInboxButton= (ImageButton) findViewById(R.id.view_inbox_button);
+        //ImageButton viewInboxButton= (ImageButton) findViewById(R.id.view_inbox_button);
         ImageButton sendSMSButton = (ImageButton) findViewById(R.id.send_sms_button);
         ImageButton settingsButton = (ImageButton) findViewById(R.id.settings_button);
         Typeface journalFont = Typeface.createFromAsset(getAssets(), "journal.ttf");

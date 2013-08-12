@@ -253,7 +253,7 @@ public class ManageKeys extends ListActivity {
 											if (status) {
 												Toast.makeText(
 														getApplicationContext(),
-														R.string.item_removed, 1000)
+														R.string.item_removed, Toast.LENGTH_SHORT)
 														.show();
 												setUpList();
 											} else
