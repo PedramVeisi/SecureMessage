@@ -80,7 +80,7 @@
 	<string name="app_password">Application Password</string>
 	<string name="receiver_field_hint">To</string>
 	<string name="to">To</string>
-	<string name="enter_your_text_">Enter your text...</string>
+	<string name="enter_your_text">Enter your text...</string>
 	<string name="security_question">Security Question</string>
 	<string name="security_answer">Security Answer</string>
 	<string name="enter_sec_q">Provide Security Question</string>

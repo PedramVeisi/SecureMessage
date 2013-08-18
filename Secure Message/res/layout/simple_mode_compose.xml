@@ -24,10 +24,9 @@
         android:layout_height="fill_parent"
         android:layout_above="@id/linearLayout1"
         android:layout_below="@id/sms_receiver_autocomplete_textview"
-        android:background="@drawable/text_edit_background"
         android:gravity="top"
         android:inputType="textMultiLine"
-        android:hint="Enter your text..."
+        android:hint="@string/enter_your_text"
         >
 
     </EditText>
@@ -44,7 +43,6 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/buttons_layout"
             android:text="@string/clear"
             android:textColor="#FFFFFF" >
         </Button>
