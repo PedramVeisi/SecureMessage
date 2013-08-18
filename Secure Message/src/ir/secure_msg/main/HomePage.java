@@ -20,25 +20,30 @@
 
 package ir.secure_msg.main;
 
+import org.holoeverywhere.app.Activity;
+import org.holoeverywhere.widget.Button;
+
+import com.actionbarsherlock.view.Menu;
+import com.actionbarsherlock.view.MenuInflater;
+import com.actionbarsherlock.view.MenuItem;
+
 import ir.secure_msg.documents.AboutUs;
 import ir.secure_msg.keygeneration.ManageKeys;
 import ir.secure_msg.preferences.HandlePreferences;
 import ir.secure_msg.preferences.PreferencesInterface;
 import ir.secure_msg.preferences.PreferencesActivity;
 import ir.secure_msg.sms.CreateEncryptedSMS;
-//import ir.secure_msg.sms.InboxActivity;
-import android.app.Activity;
 import android.content.Intent;
+//import ir.secure_msg.sms.InboxActivity;
 import android.content.SharedPreferences;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import ir.secure_msg.R;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
+import android.support.v4.app.ActionBarDrawerToggle;
+import android.support.v4.widget.DrawerLayout;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.ImageButton;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -46,13 +51,15 @@ public class HomePage extends Activity implements PreferencesInterface {
 
 	private String appMode;
 	
+	private ActionBarDrawerToggle actionBarDrawerToggle;
+	private DrawerLayout mDrawerLayout;
+	private RelativeLayout drawerRelativeLayout;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-      setContentView(R.layout.home_page_advanced);
+		super.onCreate(savedInstanceState);		
 		
-		
-        SharedPreferences settings = getSharedPreferences(PREF_FILE_NAME, 0);
+		SharedPreferences settings = getSharedPreferences(PREF_FILE_NAME, 0);
 		final HandlePreferences handlePrefs = new HandlePreferences(settings);
 
 		appMode = handlePrefs.getAppMode();
@@ -60,6 +67,7 @@ public class HomePage extends Activity implements PreferencesInterface {
 		if (appMode.equals("SIMPLE")) {
 			setContentView(R.layout.home_page_simple);
 		} else if (appMode.equals("ADVANCED")) {
+			//TODO Edit Advanced layout
 			setContentView(R.layout.home_page_advanced);
 		}
         
@@ -70,22 +78,55 @@ public class HomePage extends Activity implements PreferencesInterface {
 	}
 
 	private void setUpViews() {
-		
-		TextView sendSMSText = (TextView) findViewById(R.id.send_sms_text);
-		TextView viewInboxText = (TextView) findViewById(R.id.view_inbox_text);
-		TextView settingText = (TextView) findViewById(R.id.settings_text);
-        //Button donationButton = (Button) findViewById(R.id.donation_button);
         //ImageButton viewInboxButton= (ImageButton) findViewById(R.id.view_inbox_button);
-        ImageButton sendSMSButton = (ImageButton) findViewById(R.id.send_sms_button);
-        ImageButton settingsButton = (ImageButton) findViewById(R.id.settings_button);
+        
+		Button sendMsgButton = (Button) findViewById(R.id.action_send_msg);
+		Button settingsButton = (Button) findViewById(R.id.settings_button);
+        
         Typeface journalFont = Typeface.createFromAsset(getAssets(), "journal.ttf");
-        
-        sendSMSText.setTypeface(journalFont);
-        viewInboxText.setTypeface(journalFont);
-        settingText.setTypeface(journalFont);
+             
+		settingsButton.setTypeface(journalFont);
         
         
-        if (appMode.equals("ADVANCED")) {
+        
+		getSupportActionBar().setTitle("Conversations");
+
+		mDrawerLayout = (DrawerLayout) findViewById(R.id.home_drawer_layout);
+		drawerRelativeLayout = (RelativeLayout) findViewById(R.id.drawer_relative_layout);
+		
+		actionBarDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout,
+				R.drawable.ic_drawer, R.string.app_name, R.string.app_name) {
+			@Override
+			public void onDrawerOpened(View drawerView) {
+				// TODO Auto-generated method stub
+				super.onDrawerOpened(drawerView);
+			}
+		};
+
+		mDrawerLayout.setDrawerListener(actionBarDrawerToggle);
+
+		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+		getSupportActionBar().setHomeButtonEnabled(true);
+
+		
+		settingsButton.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View arg0) {
+				Intent intent = new Intent(HomePage.this, PreferencesActivity.class);
+				startActivity(intent);
+				finish();
+
+			}
+		});
+		
+		
+		
+		
+        
+        
+        
+/*        if (appMode.equals("ADVANCED")) {
         	TextView genKeysText = (TextView) findViewById(R.id.home_gen_keys_text);
         	ImageButton genKeysButton = (ImageButton) findViewById(R.id.home_gen_keys_button);
         	genKeysText.setTypeface(journalFont);
@@ -97,63 +138,49 @@ public class HomePage extends Activity implements PreferencesInterface {
     			}
     		});
         	
-        }
+        }*/
         
-        //TODO Setup donation using donation button
-
-        sendSMSButton.setOnClickListener(new OnClickListener() {
-			
-			public void onClick(View v) {
-				Intent intent = new Intent(HomePage.this, CreateEncryptedSMS.class);
-				startActivity(intent);
-			}
-		});
-        
-        settingsButton.setOnClickListener(new OnClickListener() {
-			
-			public void onClick(View arg0) {
-				Intent intent = new Intent(HomePage.this, PreferencesActivity.class);
-				startActivity(intent);
-				finish();
-
-			}
-		});
-        
-        
-        /*viewInboxButton.setOnClickListener(new OnClickListener() {
-			
-			@Override
-			public void onClick(View v) {
-				Intent intent = new Intent(HomePage.this, InboxActivity.class);
-				startActivity(intent);
-				
-			}
-		});*/
         
 	}
 	
 	
+	@Override
+	protected void onPostCreate(Bundle savedInstanceState) {
+		super.onPostCreate(savedInstanceState);
+
+		actionBarDrawerToggle.syncState();
+	}
+
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-	    MenuInflater inflater = getMenuInflater();
-	    inflater.inflate(R.menu.homepage_option_menu, menu);
-	    return true;
+		MenuInflater inflater = getSupportMenuInflater();
+		inflater.inflate(R.menu.home_action_bar, menu);
+		return true;
 	}
-	
+
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
-	    switch (item.getItemId()) {
-	        case R.id.option_menu_faq:
-	        	//TODO Create activity
-	        	Toast.makeText(this, "FAQ", Toast.LENGTH_SHORT).show();
-	            break;
-	        case R.id.option_menu_about_us:     
 
-	        	Intent intent = new Intent(HomePage.this, AboutUs.class);
-	        	startActivity(intent);
+		if (item.getItemId() == android.R.id.home) {
 
-	            break;
-	    }
-	    return true;
+			if (mDrawerLayout.isDrawerOpen(drawerRelativeLayout)) {
+				mDrawerLayout.closeDrawer(drawerRelativeLayout);
+			} else {
+				mDrawerLayout.openDrawer(drawerRelativeLayout);
+			}
+		}
+
+		switch (item.getItemId()) {
+		case R.id.action_send_msg:
+			Toast.makeText(this, "Call Send Activity", Toast.LENGTH_SHORT)
+					.show();
+			break;
+
+		default:
+			break;
+		}
+
+		return super.onOptionsItemSelected(item);
 	}
+	
 }

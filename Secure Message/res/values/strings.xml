@@ -13,7 +13,7 @@
 	<string name="set_pass_first_run">First time run. Please set application password.	</string>
 	<string name="new_pass">New password: </string>
 	<string name="confirm_password">Confirm password:</string>
-	<string name="select_publickey_text">"Select receiver's Public key"</string>
+	<string name="select_publickey_text">"Browse Receiver's Public Key"</string>
 	<string name="browse">Browse...</string>
 	<string name="done">Done</string>
 	<string name="generate_key_button">Generate New Public/Private Pair</string>
@@ -30,7 +30,7 @@
 	<string name="selected_file">Selected file: </string>
 	<string name="selected_key">Selected key: </string>
 	<string name="encrypt_text">Encrypt</string>
-	<string name="send_sms">Send SMS</string>
+	<string name="send_sms">Send</string>
 	<string name="confirm_new_password">Confirm new password:</string>
 	<string name="clear">Clear</string>
 	<string name="already_exists">Already exists.</string>
@@ -101,4 +101,5 @@
 	<string name="security_answer_is_incorrect">Security Answer is incorrect!</string>
 	<string name="fill_text_field">Fill text field</string>
 	<string name="change">Change Key</string>
+	<string name="home">Home</string>
 	</resources>
