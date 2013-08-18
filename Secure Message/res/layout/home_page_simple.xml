@@ -22,7 +22,7 @@
         android:divider="@android:color/transparent"
         android:dividerHeight="0dp" >
 
-        <org.holoeverywhere.widget.Button
+        <Button
             android:id="@+id/home_button"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -32,7 +32,9 @@
             android:gravity="center|left"
             android:paddingLeft="5dp"
             android:text="@string/home"
-            android:textColor="@android:color/white" />
+            android:textColor="@android:color/white"
+            android:textSize="26sp"
+            />
 
         <View
             android:id="@+id/seperator1"
@@ -52,7 +54,9 @@
             android:gravity="center|left"
             android:paddingLeft="5dp"
             android:text="@string/settings"
-            android:textColor="@android:color/white" />
+            android:textColor="@android:color/white"
+            android:textSize="26sp"
+            />
 
         <View
             android:id="@+id/seperator12"
@@ -81,7 +85,9 @@
             android:gravity="center|left"
             android:paddingLeft="5dp"
             android:text="@string/faq"
-            android:textColor="@android:color/white" />
+            android:textColor="@android:color/white"
+            android:textSize="26sp"
+            />
 
         <View
             android:id="@+id/seperator_minus_1"
@@ -101,8 +107,9 @@
             android:gravity="center|left"
             android:paddingLeft="5dp"
             android:text="@string/about_us"
-            android:textColor="@android:color/white" />
-        
+            android:textColor="@android:color/white"
+            android:textSize="26sp"
+            />        
     </RelativeLayout>
 
 </android.support.v4.widget.DrawerLayout>

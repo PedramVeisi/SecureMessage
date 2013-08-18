@@ -47,13 +47,13 @@ import android.view.View.OnClickListener;
 import android.widget.RelativeLayout;
 
 public class HomePage extends Activity implements PreferencesInterface {
-
+	
 	private String appMode;
 
 	private ActionBarDrawerToggle actionBarDrawerToggle;
 	private DrawerLayout mDrawerLayout;
 	private RelativeLayout drawerRelativeLayout;
-
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -86,10 +86,10 @@ public class HomePage extends Activity implements PreferencesInterface {
 		Typeface journalFont = Typeface.createFromAsset(getAssets(),
 				"journal.ttf");
 
-		settingsButton.setTypeface(journalFont);
-		aboutButton.setTypeface(journalFont);
-		helpButton.setTypeface(journalFont);
 		homeButton.setTypeface(journalFont);
+		settingsButton.setTypeface(journalFont);		
+		aboutButton.setTypeface(journalFont);		
+		helpButton.setTypeface(journalFont);
 		
 		getSupportActionBar().setTitle("Conversations");
 
