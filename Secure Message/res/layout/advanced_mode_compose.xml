@@ -20,6 +20,7 @@
 
     <Button
         android:id="@+id/browse_button"
+        android:text="@string/select_publickey_text"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/sms_receiver_autocomplete_textview"
@@ -45,7 +46,6 @@
         android:gravity="top"
         android:inputType="textMultiLine"
         android:hint="@string/enter_your_text_"
-        android:background="@drawable/text_edit_background"
         >
         <!-- android:background="@drawable/text_edit_background" -->
 
