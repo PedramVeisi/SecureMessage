@@ -172,8 +172,8 @@ public class HomePage extends Activity implements PreferencesInterface {
 
 		switch (item.getItemId()) {
 		case R.id.action_send_msg:
-			Toast.makeText(this, "Call Send Activity", Toast.LENGTH_SHORT)
-					.show();
+			Intent intent = new Intent(HomePage.this, CreateEncryptedSMS.class);
+			startActivity(intent);
 			break;
 
 		default:
