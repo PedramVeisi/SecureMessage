@@ -2970,7 +2970,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int enter_name_for_exported_key=0x7f0d006a;
         public static final int enter_sec_a=0x7f0d0085;
         public static final int enter_sec_q=0x7f0d0084;
-        public static final int enter_your_text_=0x7f0d0081;
+        public static final int enter_your_text=0x7f0d0081;
         public static final int error=0x7f0d0055;
         public static final int export_name=0x7f0d0069;
         public static final int export_private_key=0x7f0d0045;

@@ -22,6 +22,7 @@ package ir.secure_msg.main;
 
 import org.holoeverywhere.app.Activity;
 import org.holoeverywhere.widget.Button;
+import org.holoeverywhere.widget.Toast;
 
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuInflater;
@@ -44,21 +45,19 @@ import android.support.v4.widget.DrawerLayout;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.RelativeLayout;
-import android.widget.TextView;
-import android.widget.Toast;
 
 public class HomePage extends Activity implements PreferencesInterface {
 
 	private String appMode;
-	
+
 	private ActionBarDrawerToggle actionBarDrawerToggle;
 	private DrawerLayout mDrawerLayout;
 	private RelativeLayout drawerRelativeLayout;
-	
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);		
-		
+		super.onCreate(savedInstanceState);
+
 		SharedPreferences settings = getSharedPreferences(PREF_FILE_NAME, 0);
 		final HandlePreferences handlePrefs = new HandlePreferences(settings);
 
@@ -67,33 +66,36 @@ public class HomePage extends Activity implements PreferencesInterface {
 		if (appMode.equals("SIMPLE")) {
 			setContentView(R.layout.home_page_simple);
 		} else if (appMode.equals("ADVANCED")) {
-			//TODO Edit Advanced layout
+			// TODO Edit Advanced layout
 			setContentView(R.layout.home_page_advanced);
 		}
-        
-        
+
 		setUpViews();
-		
-		
+
 	}
 
 	private void setUpViews() {
-        //ImageButton viewInboxButton= (ImageButton) findViewById(R.id.view_inbox_button);
-        
-		Button sendMsgButton = (Button) findViewById(R.id.action_send_msg);
+		// ImageButton viewInboxButton= (ImageButton)
+		// findViewById(R.id.view_inbox_button);
+
 		Button settingsButton = (Button) findViewById(R.id.settings_button);
-        
-        Typeface journalFont = Typeface.createFromAsset(getAssets(), "journal.ttf");
-             
+		Button aboutButton = (Button) findViewById(R.id.about_button);
+		Button helpButton = (Button) findViewById(R.id.help_button);
+		Button homeButton = (Button) findViewById(R.id.home_button);
+
+		Typeface journalFont = Typeface.createFromAsset(getAssets(),
+				"journal.ttf");
+
 		settingsButton.setTypeface(journalFont);
-        
-        
-        
+		aboutButton.setTypeface(journalFont);
+		helpButton.setTypeface(journalFont);
+		homeButton.setTypeface(journalFont);
+		
 		getSupportActionBar().setTitle("Conversations");
 
 		mDrawerLayout = (DrawerLayout) findViewById(R.id.home_drawer_layout);
 		drawerRelativeLayout = (RelativeLayout) findViewById(R.id.drawer_relative_layout);
-		
+
 		actionBarDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout,
 				R.drawable.ic_drawer, R.string.app_name, R.string.app_name) {
 			@Override
@@ -108,42 +110,54 @@ public class HomePage extends Activity implements PreferencesInterface {
 		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 		getSupportActionBar().setHomeButtonEnabled(true);
 
-		
 		settingsButton.setOnClickListener(new OnClickListener() {
 
 			@Override
 			public void onClick(View arg0) {
-				Intent intent = new Intent(HomePage.this, PreferencesActivity.class);
+				Intent intent = new Intent(HomePage.this,
+						PreferencesActivity.class);
 				startActivity(intent);
 				finish();
 
 			}
 		});
+
+		aboutButton.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View arg0) {
+				Toast.makeText(HomePage.this, "Call About Us Activity",
+						Toast.LENGTH_SHORT).show();
+
+			}
+		});
+
+		helpButton.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View arg0) {
+				Toast.makeText(HomePage.this, "Call Help Activity",
+						Toast.LENGTH_SHORT).show();
+
+			}
+		});
 		
 		
-		
-		
-        
-        
-        
-/*        if (appMode.equals("ADVANCED")) {
-        	TextView genKeysText = (TextView) findViewById(R.id.home_gen_keys_text);
-        	ImageButton genKeysButton = (ImageButton) findViewById(R.id.home_gen_keys_button);
-        	genKeysText.setTypeface(journalFont);
-        	
-        	genKeysButton.setOnClickListener(new OnClickListener() {
-    			public void onClick(View arg0) {
-    				Intent intent = new Intent(HomePage.this, ManageKeys.class);
-    				startActivity(intent);
-    			}
-    		});
-        	
-        }*/
-        
-        
+		/*
+		 * if (appMode.equals("ADVANCED")) { TextView genKeysText = (TextView)
+		 * findViewById(R.id.home_gen_keys_text); ImageButton genKeysButton =
+		 * (ImageButton) findViewById(R.id.home_gen_keys_button);
+		 * genKeysText.setTypeface(journalFont);
+		 * 
+		 * genKeysButton.setOnClickListener(new OnClickListener() { public void
+		 * onClick(View arg0) { Intent intent = new Intent(HomePage.this,
+		 * ManageKeys.class); startActivity(intent); } });
+		 * 
+		 * }
+		 */
+
 	}
-	
-	
+
 	@Override
 	protected void onPostCreate(Bundle savedInstanceState) {
 		super.onPostCreate(savedInstanceState);
@@ -182,5 +196,5 @@ public class HomePage extends Activity implements PreferencesInterface {
 
 		return super.onOptionsItemSelected(item);
 	}
-	
+
 }
