@@ -82,6 +82,7 @@ public class HomePage extends Activity implements PreferencesInterface {
 		Button aboutButton = (Button) findViewById(R.id.about_button);
 		Button helpButton = (Button) findViewById(R.id.help_button);
 		Button homeButton = (Button) findViewById(R.id.home_button);
+		Button generateButton = (Button) findViewById(R.id.drawer_gen_keys_button);
 
 		Typeface journalFont = Typeface.createFromAsset(getAssets(),
 				"journal.ttf");
@@ -90,6 +91,7 @@ public class HomePage extends Activity implements PreferencesInterface {
 		settingsButton.setTypeface(journalFont);		
 		aboutButton.setTypeface(journalFont);		
 		helpButton.setTypeface(journalFont);
+		generateButton.setTypeface(journalFont);
 		
 		getSupportActionBar().setTitle("Conversations");
 

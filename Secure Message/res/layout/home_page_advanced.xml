@@ -59,12 +59,36 @@
             />
 
         <View
-            android:id="@+id/seperator12"
+            android:id="@+id/seperator2"
             android:layout_width="fill_parent"
             android:layout_height="1dp"
             android:layout_below="@id/settings_button"
             android:background="@android:color/holo_blue_light" />
 
+        
+        <Button
+            android:id="@+id/drawer_gen_keys_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/seperator2"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/manage_keys_48"
+            android:drawablePadding="10dp"
+            android:gravity="center|left"
+            android:paddingLeft="5dp"
+            android:text="@string/manage_keys"
+            android:textColor="@android:color/white"
+            android:textSize="26sp"
+            />
+
+        <View
+            android:id="@+id/seperator3"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/drawer_gen_keys_button"
+            android:background="@android:color/holo_blue_light" />
+        
+        
         <!-- Bottom Buttons -->
 
         <View
