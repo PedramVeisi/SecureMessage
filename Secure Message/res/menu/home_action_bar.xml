@@ -5,6 +5,7 @@
         android:orderInCategory="100"
         android:showAsAction="always"
         android:icon="@drawable/send_msg"
-        android:title="@string/send_sms"/>
+        android:title="@string/send_sms"
+        />
     
 </menu>
