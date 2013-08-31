@@ -44,6 +44,8 @@ import org.holoeverywhere.app.AlertDialog;
 import org.holoeverywhere.app.Dialog;
 import org.holoeverywhere.app.ListActivity;
 
+import com.actionbarsherlock.view.MenuItem;
+
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.res.Resources;
@@ -90,6 +92,8 @@ public class ManageKeys extends ListActivity {
 
 	private void setUpViews() {
 
+		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+		
 		setUpList();
 
 		Resources res = getResources();
@@ -324,6 +328,17 @@ public class ManageKeys extends ListActivity {
 
 	}
 
+	public boolean onOptionsItemSelected(MenuItem item) {
+	    switch (item.getItemId()) {
+
+	    case android.R.id.home:
+	         super.onBackPressed();   
+
+	    default:
+	        return super.onOptionsItemSelected(item);
+	    }
+	}
+	
 	private void setUpList() {
 		
 		ArrayList<String> folderNames = getCurrentPairsNames();

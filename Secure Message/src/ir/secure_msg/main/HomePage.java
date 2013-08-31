@@ -116,6 +116,7 @@ public class HomePage extends Activity implements PreferencesInterface {
 				Intent intent = new Intent(HomePage.this,
 						PreferencesActivity.class);
 				startActivity(intent);
+				mDrawerLayout.closeDrawer(drawerRelativeLayout);
 				finish();
 
 			}
@@ -150,6 +151,7 @@ public class HomePage extends Activity implements PreferencesInterface {
 				public void onClick(View arg0) {
 					Intent intent = new Intent(HomePage.this, ManageKeys.class);
 					startActivity(intent);
+					mDrawerLayout.closeDrawer(drawerRelativeLayout);
 				}
 			});
 
