@@ -93,6 +93,7 @@ public class ManageKeys extends ListActivity {
 	private void setUpViews() {
 
 		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+		getSupportActionBar().setTitle(R.string.manage_keys);
 		
 		setUpList();
 

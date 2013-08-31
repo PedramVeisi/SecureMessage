@@ -43,9 +43,7 @@ public class PreferencesActivity extends PreferenceActivity {
 
 	private void setUpViews() {
 		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
-		// SharedPreferences prefs = PreferenceManager
-		// .getDefaultSharedPreferences(getBaseContext());
+		getSupportActionBar().setTitle(R.string.settings);
 
 	}
 	

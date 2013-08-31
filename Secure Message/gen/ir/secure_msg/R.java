@@ -2942,6 +2942,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int clear_text_field_description=0x7f0d005e;
         public static final int confirm_new_password=0x7f0d0050;
         public static final int confirm_password=0x7f0d003d;
+        public static final int conversations=0x7f0d0097;
         public static final int creating_keypair_wait=0x7f0d0054;
         public static final int curren_pairs=0x7f0d0042;
         public static final int current_password_is_not_correct=0x7f0d0065;

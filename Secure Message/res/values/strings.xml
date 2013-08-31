@@ -6,7 +6,7 @@
 	<string name="pass_request">Enter your password:</string>
 	<string name="ok">OK</string>
 	<string name="cancel">Cancel</string>
-	<string name="manage_keys">Manage keys</string>
+	<string name="manage_keys">Manage Keys</string>
 	<string name="send_encrypted_sms">Send encrypted SMS</string>
 	<string name="view_inbox">View Inbox</string>
 	<string name="settings">Settings</string>
@@ -102,4 +102,5 @@
 	<string name="fill_text_field">Fill text field</string>
 	<string name="change">Change Key</string>
 	<string name="home">Home</string>
+	<string name="conversations">Conversations</string>
 	</resources>

@@ -90,7 +90,7 @@ public class HomePage extends Activity implements PreferencesInterface {
 		aboutButton.setTypeface(journalFont);
 		helpButton.setTypeface(journalFont);
 
-		getSupportActionBar().setTitle("Conversations");
+		getSupportActionBar().setTitle(R.string.conversations);
 
 		mDrawerLayout = (DrawerLayout) findViewById(R.id.home_drawer_layout);
 		drawerRelativeLayout = (RelativeLayout) findViewById(R.id.drawer_relative_layout);
