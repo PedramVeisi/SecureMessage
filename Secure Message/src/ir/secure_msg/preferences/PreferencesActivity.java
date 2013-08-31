@@ -18,10 +18,11 @@
 
  */
 
-
 package ir.secure_msg.preferences;
 
 import org.holoeverywhere.preference.PreferenceActivity;
+
+import com.actionbarsherlock.view.MenuItem;
 
 import ir.secure_msg.main.HomePage;
 import android.content.Intent;
@@ -32,22 +33,34 @@ public class PreferencesActivity extends PreferenceActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		
-		//TODO Remove deprecated method
-		//http://developer.android.com/reference/android/preference/PreferenceActivity.html
-		
+
+		// TODO Remove deprecated method
+		// http://developer.android.com/reference/android/preference/PreferenceActivity.html
+
 		addPreferencesFromResource(R.xml.preferences);
 		setUpViews();
 	}
 
 	private void setUpViews() {
-//		
-//		 SharedPreferences prefs = PreferenceManager
-//                 .getDefaultSharedPreferences(getBaseContext());
-		
+		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+		// SharedPreferences prefs = PreferenceManager
+		// .getDefaultSharedPreferences(getBaseContext());
+
 	}
 	
+	public boolean onOptionsItemSelected(MenuItem item) {
+	    switch (item.getItemId()) {
+
+	    case android.R.id.home:
+	    	onBackPressed();
+
+	    default:
+	        return super.onOptionsItemSelected(item);
+	    }
+	}
 	
+
 	@Override
 	public void onBackPressed() {
 

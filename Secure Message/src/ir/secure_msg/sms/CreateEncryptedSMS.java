@@ -270,8 +270,7 @@ public class CreateEncryptedSMS extends Activity implements
 	    switch (item.getItemId()) {
 
 	    case android.R.id.home:
-	         onBackPressed();
-	         return true;
+	         super.onBackPressed();   
 
 	    default:
 	        return super.onOptionsItemSelected(item);
