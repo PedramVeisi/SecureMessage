@@ -61,6 +61,8 @@ import android.widget.SimpleAdapter;
 import org.holoeverywhere.widget.TextView;
 import org.holoeverywhere.widget.Toast;
 
+import com.actionbarsherlock.view.MenuItem;
+
 public class CreateEncryptedSMS extends Activity implements
 		PreferencesInterface {
 
@@ -150,7 +152,7 @@ public class CreateEncryptedSMS extends Activity implements
 
 	private void setUpViews() {
 
-		getSupportActionBar().setHomeButtonEnabled(true);
+		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 		
 		plainTextField = (EditText) findViewById(R.id.plain_text_field);
 		encryptButton = (Button) findViewById(R.id.encrypt_text_button);
@@ -263,6 +265,20 @@ public class CreateEncryptedSMS extends Activity implements
 		});
 	}
 
+	
+	public boolean onOptionsItemSelected(MenuItem item) {
+	    switch (item.getItemId()) {
+
+	    case android.R.id.home:
+	         onBackPressed();
+	         return true;
+
+	    default:
+	        return super.onOptionsItemSelected(item);
+	    }
+	}
+	
+	
 	private void manageManualNumbers() {
 		// Read Manual numbers
 
