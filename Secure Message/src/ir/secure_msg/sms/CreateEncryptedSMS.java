@@ -34,7 +34,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.StringTokenizer;
 
-import android.app.Activity;
+import org.holoeverywhere.app.Activity;
+
 import android.app.AlertDialog;
 import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
@@ -53,12 +54,12 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
-import android.widget.MultiAutoCompleteTextView;
-import android.widget.Button;
-import android.widget.EditText;
+import org.holoeverywhere.widget.MultiAutoCompleteTextView;
+import org.holoeverywhere.widget.Button;
+import org.holoeverywhere.widget.EditText;
 import android.widget.SimpleAdapter;
-import android.widget.TextView;
-import android.widget.Toast;
+import org.holoeverywhere.widget.TextView;
+import org.holoeverywhere.widget.Toast;
 
 public class CreateEncryptedSMS extends Activity implements
 		PreferencesInterface {
@@ -100,6 +101,7 @@ public class CreateEncryptedSMS extends Activity implements
 		}
 
 		setUpViews();
+		
 		Bundle extras = getIntent().getExtras();
 		Log.d("enter", "ok!");
 		String tmp="";
@@ -148,6 +150,8 @@ public class CreateEncryptedSMS extends Activity implements
 
 	private void setUpViews() {
 
+		getSupportActionBar().setHomeButtonEnabled(true);
+		
 		plainTextField = (EditText) findViewById(R.id.plain_text_field);
 		encryptButton = (Button) findViewById(R.id.encrypt_text_button);
 		clearEncryptedTextButton = (Button) findViewById(R.id.clear_encrypted_text_button);
@@ -155,7 +159,6 @@ public class CreateEncryptedSMS extends Activity implements
 
 		receiverMultiAutoCompleteTextView = (MultiAutoCompleteTextView) findViewById(R.id.sms_receiver_autocomplete_textview);
 	
-		// receiverMultiAutoCompleteTextView.setText("09173378251");
 		manageReceiverAutocomplete();
 
 		encryptButton.setOnClickListener(new OnClickListener() {
@@ -395,10 +398,6 @@ public class CreateEncryptedSMS extends Activity implements
 			sm.sendTextMessage(receiverNumbers.get(i), null, smsText,
 					sentPendingIntent, deliveredPendingIntent);
 		}
-
-		// TODO call outbox activity here.Calling finish causes Leaked
-		// IntentReceiver exception
-		finish();
 
 	}
 

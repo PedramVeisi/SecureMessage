@@ -66,7 +66,6 @@ public class HomePage extends Activity implements PreferencesInterface {
 		if (appMode.equals("SIMPLE")) {
 			setContentView(R.layout.home_page_simple);
 		} else if (appMode.equals("ADVANCED")) {
-			// TODO Edit Advanced layout
 			setContentView(R.layout.home_page_advanced);
 		}
 
@@ -82,7 +81,6 @@ public class HomePage extends Activity implements PreferencesInterface {
 		Button aboutButton = (Button) findViewById(R.id.about_button);
 		Button helpButton = (Button) findViewById(R.id.help_button);
 		Button homeButton = (Button) findViewById(R.id.home_button);
-		Button genKeysButton = (Button) findViewById(R.id.drawer_gen_keys_button);
 
 		Typeface journalFont = Typeface.createFromAsset(getAssets(),
 				"journal.ttf");
@@ -91,7 +89,6 @@ public class HomePage extends Activity implements PreferencesInterface {
 		settingsButton.setTypeface(journalFont);
 		aboutButton.setTypeface(journalFont);
 		helpButton.setTypeface(journalFont);
-		genKeysButton.setTypeface(journalFont);
 
 		getSupportActionBar().setTitle("Conversations");
 
@@ -145,6 +142,10 @@ public class HomePage extends Activity implements PreferencesInterface {
 		});
 
 		if (appMode.equals("ADVANCED")) {
+			
+			Button genKeysButton = (Button) findViewById(R.id.drawer_gen_keys_button);
+			genKeysButton.setTypeface(journalFont);
+			
 			genKeysButton.setOnClickListener(new OnClickListener() {
 				public void onClick(View arg0) {
 					Intent intent = new Intent(HomePage.this, ManageKeys.class);
